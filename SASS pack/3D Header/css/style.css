@@ -1,0 +1,226 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    margin-top: 50px;
+    width: 80vw;
+    height: 80vh;
+    font-family: sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E8E9E9;
+    transform-origin: center;
+    transform: rotateX(40deg) rotateY(20deg) rotateZ(-20deg);
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/* preserv 3d */
+body, main, main > header, main > header > h3,
+main > section, main > section > figure,
+main > section > figure > figcaption, 
+main > section > section, main > section > section > article {
+    transform-style: preserve-3d;
+}
+/* preserv 3d */
+main > header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background-color: white;
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    transform: translateZ(40px);
+}
+main > header > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+main > header > ul > li {
+    padding: 0 20px;
+}
+main > header > ul > li > a {
+    color: black;
+    font-size: 1rem;
+    position: relative;
+    display: block;
+    padding: 10px;
+}
+main > header > ul > li > a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    transition: 0.4s;
+    background: linear-gradient(90deg, #333ff3, #f833ff);
+}
+main > header > ul > li > a:hover::before {
+    width: 100%;
+}
+main > header > h3 {
+    transition: 0.4s;
+    transform: translateZ(20px);
+    position: relative;
+}
+main > header > h3:hover {
+    transform: translateZ(30px);
+}
+main > header > h3 > a {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #333ff3, #f833ff);
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+}
+main > section {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+main > section > figure {
+    width: 65%;
+    height: 100%;
+    position: relative;
+}
+main > section > figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main > section > figure > figcaption {
+    font-size: 3rem;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    transform: translateZ(30px);
+}
+main > section > section {
+    width: 35%;
+    height: 100%;
+    background-color: #E8E9E9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+main > section > section > article {
+    width: 80%;
+    height: auto;
+    background-color: white;
+    padding: 10px 60px;
+    transform: translateZ(40px);
+    transition: 0.4s;
+    position: relative;
+}
+main > section > section > article:hover {
+    transform: translateZ(50px);
+}
+main > section > section > article > p {
+    padding: 5px 0;
+    font-size: 0.8rem;
+}
+main > section > section > article > h3 {
+    display: block;
+    background: linear-gradient(90deg, #333ff3 10%, #f833ff 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/* shadows */
+main > section > section > article::before,
+main > header::before,
+main > header > h3::before,
+.hover::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    opacity: 0.1;
+    filter: blur(4px);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: translateZ(-30px);
+    transition: 0.4s;
+}
+main > section > figure > figcaption::before {
+    content: 'Amin Hasanzadeh';
+    position: absolute;
+    color: black;
+    opacity: 0.3;
+    filter: blur(4px);
+    left: 0;
+    top: 0;
+    transform: translateZ(-30px);
+    transition: 0.4s;
+}
+.hover::before {
+    border-radius: 50%;
+}
+main > header > h3::before {
+    transform: translateZ(-20px);
+    opacity: 0.2;
+    border-radius: 25px;
+}
+main > header > h3:hover::before {
+    transform: translateZ(-30px);
+}
+main > section > section > article:hover::before{
+    transform: translateZ(-40px);
+}
+.hover:hover::before {
+    transform: translateZ(-50px);
+}
+/* shadows */
+/* right bottom button */
+.hover {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: white;
+    position: absolute;
+    right: 50px;
+    bottom: -50px;
+    border-radius: 50%;
+    transform: rotateX(40deg) rotateY(20deg) rotateZ(-20deg);
+    background-color: #333ff3;
+    transition: 0.4s;
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+.hover:hover {
+    background-color: #f833ff;
+    transform: rotateX(40deg) rotateY(20deg) rotateZ(-20deg) translateZ(20px);
+}
+.hover:hover ~ main {
+    transform: rotateX(40deg) rotateY(-20deg) rotateZ(20deg);
+}
+/* right bottom button */

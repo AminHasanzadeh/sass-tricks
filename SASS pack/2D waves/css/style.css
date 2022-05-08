@@ -1,0 +1,640 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.scene {
+  width: 100%;
+  height: 100vh;
+  background-color: #111;
+  position: relative;
+}
+
+.box {
+  margin-top: 100px;
+  width: 2%;
+  height: 200px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  display: block;
+  -webkit-animation: animate 4s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate;
+          animation: animate 4s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate;
+}
+.box:nth-child(1) {
+  left: 0%;
+  background: hsla(3.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+}
+.box:nth-child(2) {
+  left: 1%;
+  background: hsla(7.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+.box:nth-child(3) {
+  left: 2%;
+  background: hsla(10.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+.box:nth-child(4) {
+  left: 3%;
+  background: hsla(14.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+.box:nth-child(5) {
+  left: 4%;
+  background: hsla(18deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+.box:nth-child(6) {
+  left: 5%;
+  background: hsla(21.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+.box:nth-child(7) {
+  left: 6%;
+  background: hsla(25.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
+}
+.box:nth-child(8) {
+  left: 7%;
+  background: hsla(28.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+}
+.box:nth-child(9) {
+  left: 8%;
+  background: hsla(32.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+}
+.box:nth-child(10) {
+  left: 9%;
+  background: hsla(36deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+.box:nth-child(11) {
+  left: 10%;
+  background: hsla(39.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s;
+}
+.box:nth-child(12) {
+  left: 11%;
+  background: hsla(43.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+}
+.box:nth-child(13) {
+  left: 12%;
+  background: hsla(46.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -1.3s;
+          animation-delay: -1.3s;
+}
+.box:nth-child(14) {
+  left: 13%;
+  background: hsla(50.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -1.4s;
+          animation-delay: -1.4s;
+}
+.box:nth-child(15) {
+  left: 14%;
+  background: hsla(54deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+}
+.box:nth-child(16) {
+  left: 15%;
+  background: hsla(57.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -1.6s;
+          animation-delay: -1.6s;
+}
+.box:nth-child(17) {
+  left: 16%;
+  background: hsla(61.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -1.7s;
+          animation-delay: -1.7s;
+}
+.box:nth-child(18) {
+  left: 17%;
+  background: hsla(64.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -1.8s;
+          animation-delay: -1.8s;
+}
+.box:nth-child(19) {
+  left: 18%;
+  background: hsla(68.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -1.9s;
+          animation-delay: -1.9s;
+}
+.box:nth-child(20) {
+  left: 19%;
+  background: hsla(72deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+.box:nth-child(21) {
+  left: 20%;
+  background: hsla(75.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -2.1s;
+          animation-delay: -2.1s;
+}
+.box:nth-child(22) {
+  left: 21%;
+  background: hsla(79.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -2.2s;
+          animation-delay: -2.2s;
+}
+.box:nth-child(23) {
+  left: 22%;
+  background: hsla(82.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -2.3s;
+          animation-delay: -2.3s;
+}
+.box:nth-child(24) {
+  left: 23%;
+  background: hsla(86.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -2.4s;
+          animation-delay: -2.4s;
+}
+.box:nth-child(25) {
+  left: 24%;
+  background: hsla(90deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -2.5s;
+          animation-delay: -2.5s;
+}
+.box:nth-child(26) {
+  left: 25%;
+  background: hsla(93.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -2.6s;
+          animation-delay: -2.6s;
+}
+.box:nth-child(27) {
+  left: 26%;
+  background: hsla(97.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -2.7s;
+          animation-delay: -2.7s;
+}
+.box:nth-child(28) {
+  left: 27%;
+  background: hsla(100.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -2.8s;
+          animation-delay: -2.8s;
+}
+.box:nth-child(29) {
+  left: 28%;
+  background: hsla(104.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -2.9s;
+          animation-delay: -2.9s;
+}
+.box:nth-child(30) {
+  left: 29%;
+  background: hsla(108deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+}
+.box:nth-child(31) {
+  left: 30%;
+  background: hsla(111.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -3.1s;
+          animation-delay: -3.1s;
+}
+.box:nth-child(32) {
+  left: 31%;
+  background: hsla(115.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -3.2s;
+          animation-delay: -3.2s;
+}
+.box:nth-child(33) {
+  left: 32%;
+  background: hsla(118.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -3.3s;
+          animation-delay: -3.3s;
+}
+.box:nth-child(34) {
+  left: 33%;
+  background: hsla(122.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -3.4s;
+          animation-delay: -3.4s;
+}
+.box:nth-child(35) {
+  left: 34%;
+  background: hsla(126deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -3.5s;
+          animation-delay: -3.5s;
+}
+.box:nth-child(36) {
+  left: 35%;
+  background: hsla(129.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -3.6s;
+          animation-delay: -3.6s;
+}
+.box:nth-child(37) {
+  left: 36%;
+  background: hsla(133.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -3.7s;
+          animation-delay: -3.7s;
+}
+.box:nth-child(38) {
+  left: 37%;
+  background: hsla(136.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -3.8s;
+          animation-delay: -3.8s;
+}
+.box:nth-child(39) {
+  left: 38%;
+  background: hsla(140.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -3.9s;
+          animation-delay: -3.9s;
+}
+.box:nth-child(40) {
+  left: 39%;
+  background: hsla(144deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+.box:nth-child(41) {
+  left: 40%;
+  background: hsla(147.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -4.1s;
+          animation-delay: -4.1s;
+}
+.box:nth-child(42) {
+  left: 41%;
+  background: hsla(151.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -4.2s;
+          animation-delay: -4.2s;
+}
+.box:nth-child(43) {
+  left: 42%;
+  background: hsla(154.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -4.3s;
+          animation-delay: -4.3s;
+}
+.box:nth-child(44) {
+  left: 43%;
+  background: hsla(158.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -4.4s;
+          animation-delay: -4.4s;
+}
+.box:nth-child(45) {
+  left: 44%;
+  background: hsla(162deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -4.5s;
+          animation-delay: -4.5s;
+}
+.box:nth-child(46) {
+  left: 45%;
+  background: hsla(165.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -4.6s;
+          animation-delay: -4.6s;
+}
+.box:nth-child(47) {
+  left: 46%;
+  background: hsla(169.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -4.7s;
+          animation-delay: -4.7s;
+}
+.box:nth-child(48) {
+  left: 47%;
+  background: hsla(172.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -4.8s;
+          animation-delay: -4.8s;
+}
+.box:nth-child(49) {
+  left: 48%;
+  background: hsla(176.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -4.9s;
+          animation-delay: -4.9s;
+}
+.box:nth-child(50) {
+  left: 49%;
+  background: hsla(180deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+}
+.box:nth-child(51) {
+  left: 50%;
+  background: hsla(183.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -5.1s;
+          animation-delay: -5.1s;
+}
+.box:nth-child(52) {
+  left: 51%;
+  background: hsla(187.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -5.2s;
+          animation-delay: -5.2s;
+}
+.box:nth-child(53) {
+  left: 52%;
+  background: hsla(190.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -5.3s;
+          animation-delay: -5.3s;
+}
+.box:nth-child(54) {
+  left: 53%;
+  background: hsla(194.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -5.4s;
+          animation-delay: -5.4s;
+}
+.box:nth-child(55) {
+  left: 54%;
+  background: hsla(198deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -5.5s;
+          animation-delay: -5.5s;
+}
+.box:nth-child(56) {
+  left: 55%;
+  background: hsla(201.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -5.6s;
+          animation-delay: -5.6s;
+}
+.box:nth-child(57) {
+  left: 56%;
+  background: hsla(205.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -5.7s;
+          animation-delay: -5.7s;
+}
+.box:nth-child(58) {
+  left: 57%;
+  background: hsla(208.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -5.8s;
+          animation-delay: -5.8s;
+}
+.box:nth-child(59) {
+  left: 58%;
+  background: hsla(212.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -5.9s;
+          animation-delay: -5.9s;
+}
+.box:nth-child(60) {
+  left: 59%;
+  background: hsla(216deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+.box:nth-child(61) {
+  left: 60%;
+  background: hsla(219.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -6.1s;
+          animation-delay: -6.1s;
+}
+.box:nth-child(62) {
+  left: 61%;
+  background: hsla(223.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -6.2s;
+          animation-delay: -6.2s;
+}
+.box:nth-child(63) {
+  left: 62%;
+  background: hsla(226.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -6.3s;
+          animation-delay: -6.3s;
+}
+.box:nth-child(64) {
+  left: 63%;
+  background: hsla(230.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -6.4s;
+          animation-delay: -6.4s;
+}
+.box:nth-child(65) {
+  left: 64%;
+  background: hsla(234deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -6.5s;
+          animation-delay: -6.5s;
+}
+.box:nth-child(66) {
+  left: 65%;
+  background: hsla(237.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -6.6s;
+          animation-delay: -6.6s;
+}
+.box:nth-child(67) {
+  left: 66%;
+  background: hsla(241.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -6.7s;
+          animation-delay: -6.7s;
+}
+.box:nth-child(68) {
+  left: 67%;
+  background: hsla(244.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -6.8s;
+          animation-delay: -6.8s;
+}
+.box:nth-child(69) {
+  left: 68%;
+  background: hsla(248.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -6.9s;
+          animation-delay: -6.9s;
+}
+.box:nth-child(70) {
+  left: 69%;
+  background: hsla(252deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -7s;
+          animation-delay: -7s;
+}
+.box:nth-child(71) {
+  left: 70%;
+  background: hsla(255.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -7.1s;
+          animation-delay: -7.1s;
+}
+.box:nth-child(72) {
+  left: 71%;
+  background: hsla(259.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -7.2s;
+          animation-delay: -7.2s;
+}
+.box:nth-child(73) {
+  left: 72%;
+  background: hsla(262.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -7.3s;
+          animation-delay: -7.3s;
+}
+.box:nth-child(74) {
+  left: 73%;
+  background: hsla(266.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -7.4s;
+          animation-delay: -7.4s;
+}
+.box:nth-child(75) {
+  left: 74%;
+  background: hsla(270deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -7.5s;
+          animation-delay: -7.5s;
+}
+.box:nth-child(76) {
+  left: 75%;
+  background: hsla(273.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -7.6s;
+          animation-delay: -7.6s;
+}
+.box:nth-child(77) {
+  left: 76%;
+  background: hsla(277.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -7.7s;
+          animation-delay: -7.7s;
+}
+.box:nth-child(78) {
+  left: 77%;
+  background: hsla(280.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -7.8s;
+          animation-delay: -7.8s;
+}
+.box:nth-child(79) {
+  left: 78%;
+  background: hsla(284.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -7.9s;
+          animation-delay: -7.9s;
+}
+.box:nth-child(80) {
+  left: 79%;
+  background: hsla(288deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -8s;
+          animation-delay: -8s;
+}
+.box:nth-child(81) {
+  left: 80%;
+  background: hsla(291.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -8.1s;
+          animation-delay: -8.1s;
+}
+.box:nth-child(82) {
+  left: 81%;
+  background: hsla(295.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -8.2s;
+          animation-delay: -8.2s;
+}
+.box:nth-child(83) {
+  left: 82%;
+  background: hsla(298.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -8.3s;
+          animation-delay: -8.3s;
+}
+.box:nth-child(84) {
+  left: 83%;
+  background: hsla(302.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -8.4s;
+          animation-delay: -8.4s;
+}
+.box:nth-child(85) {
+  left: 84%;
+  background: hsla(306deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -8.5s;
+          animation-delay: -8.5s;
+}
+.box:nth-child(86) {
+  left: 85%;
+  background: hsla(309.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -8.6s;
+          animation-delay: -8.6s;
+}
+.box:nth-child(87) {
+  left: 86%;
+  background: hsla(313.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -8.7s;
+          animation-delay: -8.7s;
+}
+.box:nth-child(88) {
+  left: 87%;
+  background: hsla(316.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -8.8s;
+          animation-delay: -8.8s;
+}
+.box:nth-child(89) {
+  left: 88%;
+  background: hsla(320.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -8.9s;
+          animation-delay: -8.9s;
+}
+.box:nth-child(90) {
+  left: 89%;
+  background: hsla(324deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -9s;
+          animation-delay: -9s;
+}
+.box:nth-child(91) {
+  left: 90%;
+  background: hsla(327.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -9.1s;
+          animation-delay: -9.1s;
+}
+.box:nth-child(92) {
+  left: 91%;
+  background: hsla(331.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -9.2s;
+          animation-delay: -9.2s;
+}
+.box:nth-child(93) {
+  left: 92%;
+  background: hsla(334.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -9.3s;
+          animation-delay: -9.3s;
+}
+.box:nth-child(94) {
+  left: 93%;
+  background: hsla(338.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -9.4s;
+          animation-delay: -9.4s;
+}
+.box:nth-child(95) {
+  left: 94%;
+  background: hsla(342deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -9.5s;
+          animation-delay: -9.5s;
+}
+.box:nth-child(96) {
+  left: 95%;
+  background: hsla(345.6deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -9.6s;
+          animation-delay: -9.6s;
+}
+.box:nth-child(97) {
+  left: 96%;
+  background: hsla(349.2deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -9.7s;
+          animation-delay: -9.7s;
+}
+.box:nth-child(98) {
+  left: 97%;
+  background: hsla(352.8deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -9.8s;
+          animation-delay: -9.8s;
+}
+.box:nth-child(99) {
+  left: 98%;
+  background: hsla(356.4deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -9.9s;
+          animation-delay: -9.9s;
+}
+.box:nth-child(100) {
+  left: 99%;
+  background: hsla(0deg, 50%, 50%, 0.6);
+  -webkit-animation-delay: -10s;
+          animation-delay: -10s;
+}
+
+@-webkit-keyframes animate {
+  100% {
+    transform: translate(1px, 332px);
+  }
+}
+
+@keyframes animate {
+  100% {
+    transform: translate(1px, 332px);
+  }
+}/*# sourceMappingURL=style.css.map */

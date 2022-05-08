@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+$rings: 16;
+@mixin random-color() {
+    color: rgb(random(255), random(255), random(255));
+}
+.scene {
+    width: 100%;
+    height: 100vmin;
+    background-color: #111;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 36px;
+        z-index: 0;
+        font-family: sans-serif;
+    }
+    .sepher {   
+        margin-top: 50px;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        transform-style: preserve-3d;
+        animation: rotate 10s linear infinite;
+        &:hover {
+            transform: rotateX(60deg);
+            animation: unset;
+        }
+        .ring {
+            width: 100%;
+            height: 100%;
+            border: 6px dashed;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            @for $i from 1 through $rings {
+                &:nth-child(#{$i}) {
+                    @include random-color();
+                    transform: rotateY(((360deg / 2) / $rings) * $i);
+                }
+            }
+        }
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}

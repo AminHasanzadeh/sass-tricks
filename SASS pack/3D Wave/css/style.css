@@ -1,0 +1,1656 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+}
+
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100vmin;
+  transform-style: preserve-3d;
+}
+.scene .box {
+  background-color: #2b2b2b;
+  position: absolute;
+  top: calc(50% - 300px);
+  left: calc(50% - 300px);
+  width: 600px;
+  height: 600px;
+  box-shadow: 0 0 6px 8px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: repeat(20, 30px);
+  grid-template-rows: repeat(20, 30px);
+  transform: rotateX(55deg) rotateZ(-45deg);
+  transform-style: preserve-3d;
+  transition: 2s;
+}
+.scene .box .block {
+  width: 25px;
+  height: 25px;
+  -webkit-animation: rising 4s ease calc(var(--delay1) + var(--delay2)) infinite alternate;
+          animation: rising 4s ease calc(var(--delay1) + var(--delay2)) infinite alternate;
+}
+.scene .box .block:nth-child(1) {
+  background-color: hsl(0deg, 70%, 70%);
+}
+.scene .box .block:nth-child(2) {
+  background-color: hsl(0.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(3) {
+  background-color: hsl(1.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(4) {
+  background-color: hsl(2.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(5) {
+  background-color: hsl(3.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(6) {
+  background-color: hsl(4.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(7) {
+  background-color: hsl(5.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(8) {
+  background-color: hsl(6.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(9) {
+  background-color: hsl(7.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(10) {
+  background-color: hsl(8.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(11) {
+  background-color: hsl(9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(12) {
+  background-color: hsl(9.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(13) {
+  background-color: hsl(10.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(14) {
+  background-color: hsl(11.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(15) {
+  background-color: hsl(12.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(16) {
+  background-color: hsl(13.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(17) {
+  background-color: hsl(14.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(18) {
+  background-color: hsl(15.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(19) {
+  background-color: hsl(16.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(20) {
+  background-color: hsl(17.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(21) {
+  background-color: hsl(18deg, 70%, 70%);
+}
+.scene .box .block:nth-child(22) {
+  background-color: hsl(18.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(23) {
+  background-color: hsl(19.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(24) {
+  background-color: hsl(20.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(25) {
+  background-color: hsl(21.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(26) {
+  background-color: hsl(22.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(27) {
+  background-color: hsl(23.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(28) {
+  background-color: hsl(24.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(29) {
+  background-color: hsl(25.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(30) {
+  background-color: hsl(26.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(31) {
+  background-color: hsl(27deg, 70%, 70%);
+}
+.scene .box .block:nth-child(32) {
+  background-color: hsl(27.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(33) {
+  background-color: hsl(28.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(34) {
+  background-color: hsl(29.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(35) {
+  background-color: hsl(30.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(36) {
+  background-color: hsl(31.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(37) {
+  background-color: hsl(32.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(38) {
+  background-color: hsl(33.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(39) {
+  background-color: hsl(34.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(40) {
+  background-color: hsl(35.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(41) {
+  background-color: hsl(36deg, 70%, 70%);
+}
+.scene .box .block:nth-child(42) {
+  background-color: hsl(36.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(43) {
+  background-color: hsl(37.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(44) {
+  background-color: hsl(38.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(45) {
+  background-color: hsl(39.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(46) {
+  background-color: hsl(40.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(47) {
+  background-color: hsl(41.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(48) {
+  background-color: hsl(42.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(49) {
+  background-color: hsl(43.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(50) {
+  background-color: hsl(44.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(51) {
+  background-color: hsl(45deg, 70%, 70%);
+}
+.scene .box .block:nth-child(52) {
+  background-color: hsl(45.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(53) {
+  background-color: hsl(46.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(54) {
+  background-color: hsl(47.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(55) {
+  background-color: hsl(48.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(56) {
+  background-color: hsl(49.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(57) {
+  background-color: hsl(50.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(58) {
+  background-color: hsl(51.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(59) {
+  background-color: hsl(52.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(60) {
+  background-color: hsl(53.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(61) {
+  background-color: hsl(54deg, 70%, 70%);
+}
+.scene .box .block:nth-child(62) {
+  background-color: hsl(54.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(63) {
+  background-color: hsl(55.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(64) {
+  background-color: hsl(56.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(65) {
+  background-color: hsl(57.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(66) {
+  background-color: hsl(58.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(67) {
+  background-color: hsl(59.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(68) {
+  background-color: hsl(60.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(69) {
+  background-color: hsl(61.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(70) {
+  background-color: hsl(62.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(71) {
+  background-color: hsl(63deg, 70%, 70%);
+}
+.scene .box .block:nth-child(72) {
+  background-color: hsl(63.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(73) {
+  background-color: hsl(64.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(74) {
+  background-color: hsl(65.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(75) {
+  background-color: hsl(66.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(76) {
+  background-color: hsl(67.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(77) {
+  background-color: hsl(68.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(78) {
+  background-color: hsl(69.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(79) {
+  background-color: hsl(70.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(80) {
+  background-color: hsl(71.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(81) {
+  background-color: hsl(72deg, 70%, 70%);
+}
+.scene .box .block:nth-child(82) {
+  background-color: hsl(72.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(83) {
+  background-color: hsl(73.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(84) {
+  background-color: hsl(74.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(85) {
+  background-color: hsl(75.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(86) {
+  background-color: hsl(76.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(87) {
+  background-color: hsl(77.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(88) {
+  background-color: hsl(78.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(89) {
+  background-color: hsl(79.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(90) {
+  background-color: hsl(80.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(91) {
+  background-color: hsl(81deg, 70%, 70%);
+}
+.scene .box .block:nth-child(92) {
+  background-color: hsl(81.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(93) {
+  background-color: hsl(82.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(94) {
+  background-color: hsl(83.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(95) {
+  background-color: hsl(84.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(96) {
+  background-color: hsl(85.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(97) {
+  background-color: hsl(86.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(98) {
+  background-color: hsl(87.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(99) {
+  background-color: hsl(88.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(100) {
+  background-color: hsl(89.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(101) {
+  background-color: hsl(90deg, 70%, 70%);
+}
+.scene .box .block:nth-child(102) {
+  background-color: hsl(90.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(103) {
+  background-color: hsl(91.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(104) {
+  background-color: hsl(92.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(105) {
+  background-color: hsl(93.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(106) {
+  background-color: hsl(94.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(107) {
+  background-color: hsl(95.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(108) {
+  background-color: hsl(96.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(109) {
+  background-color: hsl(97.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(110) {
+  background-color: hsl(98.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(111) {
+  background-color: hsl(99deg, 70%, 70%);
+}
+.scene .box .block:nth-child(112) {
+  background-color: hsl(99.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(113) {
+  background-color: hsl(100.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(114) {
+  background-color: hsl(101.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(115) {
+  background-color: hsl(102.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(116) {
+  background-color: hsl(103.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(117) {
+  background-color: hsl(104.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(118) {
+  background-color: hsl(105.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(119) {
+  background-color: hsl(106.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(120) {
+  background-color: hsl(107.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(121) {
+  background-color: hsl(108deg, 70%, 70%);
+}
+.scene .box .block:nth-child(122) {
+  background-color: hsl(108.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(123) {
+  background-color: hsl(109.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(124) {
+  background-color: hsl(110.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(125) {
+  background-color: hsl(111.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(126) {
+  background-color: hsl(112.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(127) {
+  background-color: hsl(113.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(128) {
+  background-color: hsl(114.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(129) {
+  background-color: hsl(115.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(130) {
+  background-color: hsl(116.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(131) {
+  background-color: hsl(117deg, 70%, 70%);
+}
+.scene .box .block:nth-child(132) {
+  background-color: hsl(117.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(133) {
+  background-color: hsl(118.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(134) {
+  background-color: hsl(119.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(135) {
+  background-color: hsl(120.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(136) {
+  background-color: hsl(121.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(137) {
+  background-color: hsl(122.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(138) {
+  background-color: hsl(123.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(139) {
+  background-color: hsl(124.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(140) {
+  background-color: hsl(125.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(141) {
+  background-color: hsl(126deg, 70%, 70%);
+}
+.scene .box .block:nth-child(142) {
+  background-color: hsl(126.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(143) {
+  background-color: hsl(127.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(144) {
+  background-color: hsl(128.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(145) {
+  background-color: hsl(129.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(146) {
+  background-color: hsl(130.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(147) {
+  background-color: hsl(131.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(148) {
+  background-color: hsl(132.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(149) {
+  background-color: hsl(133.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(150) {
+  background-color: hsl(134.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(151) {
+  background-color: hsl(135deg, 70%, 70%);
+}
+.scene .box .block:nth-child(152) {
+  background-color: hsl(135.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(153) {
+  background-color: hsl(136.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(154) {
+  background-color: hsl(137.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(155) {
+  background-color: hsl(138.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(156) {
+  background-color: hsl(139.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(157) {
+  background-color: hsl(140.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(158) {
+  background-color: hsl(141.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(159) {
+  background-color: hsl(142.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(160) {
+  background-color: hsl(143.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(161) {
+  background-color: hsl(144deg, 70%, 70%);
+}
+.scene .box .block:nth-child(162) {
+  background-color: hsl(144.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(163) {
+  background-color: hsl(145.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(164) {
+  background-color: hsl(146.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(165) {
+  background-color: hsl(147.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(166) {
+  background-color: hsl(148.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(167) {
+  background-color: hsl(149.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(168) {
+  background-color: hsl(150.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(169) {
+  background-color: hsl(151.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(170) {
+  background-color: hsl(152.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(171) {
+  background-color: hsl(153deg, 70%, 70%);
+}
+.scene .box .block:nth-child(172) {
+  background-color: hsl(153.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(173) {
+  background-color: hsl(154.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(174) {
+  background-color: hsl(155.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(175) {
+  background-color: hsl(156.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(176) {
+  background-color: hsl(157.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(177) {
+  background-color: hsl(158.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(178) {
+  background-color: hsl(159.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(179) {
+  background-color: hsl(160.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(180) {
+  background-color: hsl(161.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(181) {
+  background-color: hsl(162deg, 70%, 70%);
+}
+.scene .box .block:nth-child(182) {
+  background-color: hsl(162.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(183) {
+  background-color: hsl(163.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(184) {
+  background-color: hsl(164.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(185) {
+  background-color: hsl(165.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(186) {
+  background-color: hsl(166.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(187) {
+  background-color: hsl(167.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(188) {
+  background-color: hsl(168.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(189) {
+  background-color: hsl(169.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(190) {
+  background-color: hsl(170.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(191) {
+  background-color: hsl(171deg, 70%, 70%);
+}
+.scene .box .block:nth-child(192) {
+  background-color: hsl(171.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(193) {
+  background-color: hsl(172.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(194) {
+  background-color: hsl(173.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(195) {
+  background-color: hsl(174.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(196) {
+  background-color: hsl(175.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(197) {
+  background-color: hsl(176.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(198) {
+  background-color: hsl(177.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(199) {
+  background-color: hsl(178.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(200) {
+  background-color: hsl(179.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(201) {
+  background-color: hsl(180deg, 70%, 70%);
+}
+.scene .box .block:nth-child(202) {
+  background-color: hsl(180.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(203) {
+  background-color: hsl(181.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(204) {
+  background-color: hsl(182.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(205) {
+  background-color: hsl(183.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(206) {
+  background-color: hsl(184.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(207) {
+  background-color: hsl(185.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(208) {
+  background-color: hsl(186.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(209) {
+  background-color: hsl(187.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(210) {
+  background-color: hsl(188.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(211) {
+  background-color: hsl(189deg, 70%, 70%);
+}
+.scene .box .block:nth-child(212) {
+  background-color: hsl(189.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(213) {
+  background-color: hsl(190.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(214) {
+  background-color: hsl(191.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(215) {
+  background-color: hsl(192.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(216) {
+  background-color: hsl(193.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(217) {
+  background-color: hsl(194.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(218) {
+  background-color: hsl(195.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(219) {
+  background-color: hsl(196.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(220) {
+  background-color: hsl(197.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(221) {
+  background-color: hsl(198deg, 70%, 70%);
+}
+.scene .box .block:nth-child(222) {
+  background-color: hsl(198.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(223) {
+  background-color: hsl(199.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(224) {
+  background-color: hsl(200.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(225) {
+  background-color: hsl(201.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(226) {
+  background-color: hsl(202.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(227) {
+  background-color: hsl(203.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(228) {
+  background-color: hsl(204.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(229) {
+  background-color: hsl(205.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(230) {
+  background-color: hsl(206.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(231) {
+  background-color: hsl(207deg, 70%, 70%);
+}
+.scene .box .block:nth-child(232) {
+  background-color: hsl(207.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(233) {
+  background-color: hsl(208.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(234) {
+  background-color: hsl(209.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(235) {
+  background-color: hsl(210.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(236) {
+  background-color: hsl(211.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(237) {
+  background-color: hsl(212.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(238) {
+  background-color: hsl(213.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(239) {
+  background-color: hsl(214.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(240) {
+  background-color: hsl(215.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(241) {
+  background-color: hsl(216deg, 70%, 70%);
+}
+.scene .box .block:nth-child(242) {
+  background-color: hsl(216.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(243) {
+  background-color: hsl(217.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(244) {
+  background-color: hsl(218.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(245) {
+  background-color: hsl(219.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(246) {
+  background-color: hsl(220.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(247) {
+  background-color: hsl(221.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(248) {
+  background-color: hsl(222.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(249) {
+  background-color: hsl(223.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(250) {
+  background-color: hsl(224.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(251) {
+  background-color: hsl(225deg, 70%, 70%);
+}
+.scene .box .block:nth-child(252) {
+  background-color: hsl(225.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(253) {
+  background-color: hsl(226.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(254) {
+  background-color: hsl(227.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(255) {
+  background-color: hsl(228.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(256) {
+  background-color: hsl(229.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(257) {
+  background-color: hsl(230.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(258) {
+  background-color: hsl(231.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(259) {
+  background-color: hsl(232.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(260) {
+  background-color: hsl(233.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(261) {
+  background-color: hsl(234deg, 70%, 70%);
+}
+.scene .box .block:nth-child(262) {
+  background-color: hsl(234.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(263) {
+  background-color: hsl(235.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(264) {
+  background-color: hsl(236.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(265) {
+  background-color: hsl(237.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(266) {
+  background-color: hsl(238.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(267) {
+  background-color: hsl(239.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(268) {
+  background-color: hsl(240.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(269) {
+  background-color: hsl(241.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(270) {
+  background-color: hsl(242.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(271) {
+  background-color: hsl(243deg, 70%, 70%);
+}
+.scene .box .block:nth-child(272) {
+  background-color: hsl(243.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(273) {
+  background-color: hsl(244.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(274) {
+  background-color: hsl(245.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(275) {
+  background-color: hsl(246.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(276) {
+  background-color: hsl(247.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(277) {
+  background-color: hsl(248.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(278) {
+  background-color: hsl(249.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(279) {
+  background-color: hsl(250.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(280) {
+  background-color: hsl(251.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(281) {
+  background-color: hsl(252deg, 70%, 70%);
+}
+.scene .box .block:nth-child(282) {
+  background-color: hsl(252.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(283) {
+  background-color: hsl(253.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(284) {
+  background-color: hsl(254.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(285) {
+  background-color: hsl(255.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(286) {
+  background-color: hsl(256.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(287) {
+  background-color: hsl(257.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(288) {
+  background-color: hsl(258.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(289) {
+  background-color: hsl(259.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(290) {
+  background-color: hsl(260.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(291) {
+  background-color: hsl(261deg, 70%, 70%);
+}
+.scene .box .block:nth-child(292) {
+  background-color: hsl(261.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(293) {
+  background-color: hsl(262.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(294) {
+  background-color: hsl(263.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(295) {
+  background-color: hsl(264.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(296) {
+  background-color: hsl(265.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(297) {
+  background-color: hsl(266.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(298) {
+  background-color: hsl(267.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(299) {
+  background-color: hsl(268.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(300) {
+  background-color: hsl(269.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(301) {
+  background-color: hsl(270deg, 70%, 70%);
+}
+.scene .box .block:nth-child(302) {
+  background-color: hsl(270.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(303) {
+  background-color: hsl(271.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(304) {
+  background-color: hsl(272.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(305) {
+  background-color: hsl(273.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(306) {
+  background-color: hsl(274.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(307) {
+  background-color: hsl(275.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(308) {
+  background-color: hsl(276.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(309) {
+  background-color: hsl(277.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(310) {
+  background-color: hsl(278.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(311) {
+  background-color: hsl(279deg, 70%, 70%);
+}
+.scene .box .block:nth-child(312) {
+  background-color: hsl(279.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(313) {
+  background-color: hsl(280.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(314) {
+  background-color: hsl(281.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(315) {
+  background-color: hsl(282.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(316) {
+  background-color: hsl(283.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(317) {
+  background-color: hsl(284.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(318) {
+  background-color: hsl(285.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(319) {
+  background-color: hsl(286.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(320) {
+  background-color: hsl(287.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(321) {
+  background-color: hsl(288deg, 70%, 70%);
+}
+.scene .box .block:nth-child(322) {
+  background-color: hsl(288.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(323) {
+  background-color: hsl(289.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(324) {
+  background-color: hsl(290.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(325) {
+  background-color: hsl(291.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(326) {
+  background-color: hsl(292.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(327) {
+  background-color: hsl(293.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(328) {
+  background-color: hsl(294.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(329) {
+  background-color: hsl(295.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(330) {
+  background-color: hsl(296.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(331) {
+  background-color: hsl(297deg, 70%, 70%);
+}
+.scene .box .block:nth-child(332) {
+  background-color: hsl(297.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(333) {
+  background-color: hsl(298.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(334) {
+  background-color: hsl(299.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(335) {
+  background-color: hsl(300.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(336) {
+  background-color: hsl(301.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(337) {
+  background-color: hsl(302.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(338) {
+  background-color: hsl(303.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(339) {
+  background-color: hsl(304.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(340) {
+  background-color: hsl(305.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(341) {
+  background-color: hsl(306deg, 70%, 70%);
+}
+.scene .box .block:nth-child(342) {
+  background-color: hsl(306.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(343) {
+  background-color: hsl(307.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(344) {
+  background-color: hsl(308.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(345) {
+  background-color: hsl(309.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(346) {
+  background-color: hsl(310.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(347) {
+  background-color: hsl(311.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(348) {
+  background-color: hsl(312.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(349) {
+  background-color: hsl(313.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(350) {
+  background-color: hsl(314.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(351) {
+  background-color: hsl(315deg, 70%, 70%);
+}
+.scene .box .block:nth-child(352) {
+  background-color: hsl(315.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(353) {
+  background-color: hsl(316.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(354) {
+  background-color: hsl(317.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(355) {
+  background-color: hsl(318.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(356) {
+  background-color: hsl(319.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(357) {
+  background-color: hsl(320.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(358) {
+  background-color: hsl(321.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(359) {
+  background-color: hsl(322.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(360) {
+  background-color: hsl(323.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(361) {
+  background-color: hsl(324deg, 70%, 70%);
+}
+.scene .box .block:nth-child(362) {
+  background-color: hsl(324.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(363) {
+  background-color: hsl(325.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(364) {
+  background-color: hsl(326.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(365) {
+  background-color: hsl(327.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(366) {
+  background-color: hsl(328.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(367) {
+  background-color: hsl(329.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(368) {
+  background-color: hsl(330.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(369) {
+  background-color: hsl(331.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(370) {
+  background-color: hsl(332.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(371) {
+  background-color: hsl(333deg, 70%, 70%);
+}
+.scene .box .block:nth-child(372) {
+  background-color: hsl(333.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(373) {
+  background-color: hsl(334.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(374) {
+  background-color: hsl(335.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(375) {
+  background-color: hsl(336.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(376) {
+  background-color: hsl(337.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(377) {
+  background-color: hsl(338.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(378) {
+  background-color: hsl(339.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(379) {
+  background-color: hsl(340.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(380) {
+  background-color: hsl(341.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(381) {
+  background-color: hsl(342deg, 70%, 70%);
+}
+.scene .box .block:nth-child(382) {
+  background-color: hsl(342.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(383) {
+  background-color: hsl(343.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(384) {
+  background-color: hsl(344.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(385) {
+  background-color: hsl(345.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(386) {
+  background-color: hsl(346.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(387) {
+  background-color: hsl(347.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(388) {
+  background-color: hsl(348.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(389) {
+  background-color: hsl(349.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(390) {
+  background-color: hsl(350.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(391) {
+  background-color: hsl(351deg, 70%, 70%);
+}
+.scene .box .block:nth-child(392) {
+  background-color: hsl(351.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(393) {
+  background-color: hsl(352.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(394) {
+  background-color: hsl(353.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(395) {
+  background-color: hsl(354.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(396) {
+  background-color: hsl(355.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(397) {
+  background-color: hsl(356.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(398) {
+  background-color: hsl(357.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(399) {
+  background-color: hsl(358.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(400) {
+  background-color: hsl(359.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(401) {
+  background-color: hsl(0deg, 70%, 70%);
+}
+.scene .box .block:nth-child(402) {
+  background-color: hsl(0.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(403) {
+  background-color: hsl(1.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(404) {
+  background-color: hsl(2.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(405) {
+  background-color: hsl(3.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(406) {
+  background-color: hsl(4.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(407) {
+  background-color: hsl(5.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(408) {
+  background-color: hsl(6.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(409) {
+  background-color: hsl(7.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(410) {
+  background-color: hsl(8.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(411) {
+  background-color: hsl(9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(412) {
+  background-color: hsl(9.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(413) {
+  background-color: hsl(10.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(414) {
+  background-color: hsl(11.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(415) {
+  background-color: hsl(12.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(416) {
+  background-color: hsl(13.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(417) {
+  background-color: hsl(14.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(418) {
+  background-color: hsl(15.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(419) {
+  background-color: hsl(16.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(420) {
+  background-color: hsl(17.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(421) {
+  background-color: hsl(18deg, 70%, 70%);
+}
+.scene .box .block:nth-child(422) {
+  background-color: hsl(18.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(423) {
+  background-color: hsl(19.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(424) {
+  background-color: hsl(20.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(425) {
+  background-color: hsl(21.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(426) {
+  background-color: hsl(22.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(427) {
+  background-color: hsl(23.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(428) {
+  background-color: hsl(24.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(429) {
+  background-color: hsl(25.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(430) {
+  background-color: hsl(26.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(431) {
+  background-color: hsl(27deg, 70%, 70%);
+}
+.scene .box .block:nth-child(432) {
+  background-color: hsl(27.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(433) {
+  background-color: hsl(28.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(434) {
+  background-color: hsl(29.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(435) {
+  background-color: hsl(30.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(436) {
+  background-color: hsl(31.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(437) {
+  background-color: hsl(32.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(438) {
+  background-color: hsl(33.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(439) {
+  background-color: hsl(34.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(440) {
+  background-color: hsl(35.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(441) {
+  background-color: hsl(36deg, 70%, 70%);
+}
+.scene .box .block:nth-child(442) {
+  background-color: hsl(36.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(443) {
+  background-color: hsl(37.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(444) {
+  background-color: hsl(38.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(445) {
+  background-color: hsl(39.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(446) {
+  background-color: hsl(40.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(447) {
+  background-color: hsl(41.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(448) {
+  background-color: hsl(42.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(449) {
+  background-color: hsl(43.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(450) {
+  background-color: hsl(44.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(451) {
+  background-color: hsl(45deg, 70%, 70%);
+}
+.scene .box .block:nth-child(452) {
+  background-color: hsl(45.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(453) {
+  background-color: hsl(46.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(454) {
+  background-color: hsl(47.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(455) {
+  background-color: hsl(48.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(456) {
+  background-color: hsl(49.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(457) {
+  background-color: hsl(50.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(458) {
+  background-color: hsl(51.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(459) {
+  background-color: hsl(52.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(460) {
+  background-color: hsl(53.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(461) {
+  background-color: hsl(54deg, 70%, 70%);
+}
+.scene .box .block:nth-child(462) {
+  background-color: hsl(54.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(463) {
+  background-color: hsl(55.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(464) {
+  background-color: hsl(56.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(465) {
+  background-color: hsl(57.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(466) {
+  background-color: hsl(58.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(467) {
+  background-color: hsl(59.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(468) {
+  background-color: hsl(60.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(469) {
+  background-color: hsl(61.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(470) {
+  background-color: hsl(62.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(471) {
+  background-color: hsl(63deg, 70%, 70%);
+}
+.scene .box .block:nth-child(472) {
+  background-color: hsl(63.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(473) {
+  background-color: hsl(64.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(474) {
+  background-color: hsl(65.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(475) {
+  background-color: hsl(66.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(476) {
+  background-color: hsl(67.5deg, 70%, 70%);
+}
+.scene .box .block:nth-child(477) {
+  background-color: hsl(68.4deg, 70%, 70%);
+}
+.scene .box .block:nth-child(478) {
+  background-color: hsl(69.3deg, 70%, 70%);
+}
+.scene .box .block:nth-child(479) {
+  background-color: hsl(70.2deg, 70%, 70%);
+}
+.scene .box .block:nth-child(480) {
+  background-color: hsl(71.1deg, 70%, 70%);
+}
+.scene .box .block:nth-child(481) {
+  background-color: hsl(72deg, 70%, 70%);
+}
+.scene .box .block:nth-child(482) {
+  background-color: hsl(72.9deg, 70%, 70%);
+}
+.scene .box .block:nth-child(483) {
+  background-color: hsl(73.8deg, 70%, 70%);
+}
+.scene .box .block:nth-child(484) {
+  background-color: hsl(74.7deg, 70%, 70%);
+}
+.scene .box .block:nth-child(485) {
+  background-color: hsl(75.6deg, 70%, 70%);
+}
+.scene .box .block:nth-child(20n+1) {
+  --delay1: 0s;
+}
+.scene .box .block:nth-child(n+1) {
+  --delay2: 0s;
+}
+.scene .box .block:nth-child(20n+2) {
+  --delay1: -0.2s;
+}
+.scene .box .block:nth-child(n+21) {
+  --delay2: -0.2s;
+}
+.scene .box .block:nth-child(20n+3) {
+  --delay1: -0.4s;
+}
+.scene .box .block:nth-child(n+41) {
+  --delay2: -0.4s;
+}
+.scene .box .block:nth-child(20n+4) {
+  --delay1: -0.6s;
+}
+.scene .box .block:nth-child(n+61) {
+  --delay2: -0.6s;
+}
+.scene .box .block:nth-child(20n+5) {
+  --delay1: -0.8s;
+}
+.scene .box .block:nth-child(n+81) {
+  --delay2: -0.8s;
+}
+.scene .box .block:nth-child(20n+6) {
+  --delay1: -1s;
+}
+.scene .box .block:nth-child(n+101) {
+  --delay2: -1s;
+}
+.scene .box .block:nth-child(20n+7) {
+  --delay1: -1.2s;
+}
+.scene .box .block:nth-child(n+121) {
+  --delay2: -1.2s;
+}
+.scene .box .block:nth-child(20n+8) {
+  --delay1: -1.4s;
+}
+.scene .box .block:nth-child(n+141) {
+  --delay2: -1.4s;
+}
+.scene .box .block:nth-child(20n+9) {
+  --delay1: -1.6s;
+}
+.scene .box .block:nth-child(n+161) {
+  --delay2: -1.6s;
+}
+.scene .box .block:nth-child(20n+10) {
+  --delay1: -1.8s;
+}
+.scene .box .block:nth-child(n+181) {
+  --delay2: -1.8s;
+}
+.scene .box .block:nth-child(20n+11) {
+  --delay1: -2s;
+}
+.scene .box .block:nth-child(n+201) {
+  --delay2: -2s;
+}
+.scene .box .block:nth-child(20n+12) {
+  --delay1: -2.2s;
+}
+.scene .box .block:nth-child(n+221) {
+  --delay2: -2.2s;
+}
+.scene .box .block:nth-child(20n+13) {
+  --delay1: -2.4s;
+}
+.scene .box .block:nth-child(n+241) {
+  --delay2: -2.4s;
+}
+.scene .box .block:nth-child(20n+14) {
+  --delay1: -2.6s;
+}
+.scene .box .block:nth-child(n+261) {
+  --delay2: -2.6s;
+}
+.scene .box .block:nth-child(20n+15) {
+  --delay1: -2.8s;
+}
+.scene .box .block:nth-child(n+281) {
+  --delay2: -2.8s;
+}
+.scene .box .block:nth-child(20n+16) {
+  --delay1: -3s;
+}
+.scene .box .block:nth-child(n+301) {
+  --delay2: -3s;
+}
+.scene .box .block:nth-child(20n+17) {
+  --delay1: -3.2s;
+}
+.scene .box .block:nth-child(n+321) {
+  --delay2: -3.2s;
+}
+.scene .box .block:nth-child(20n+18) {
+  --delay1: -3.4s;
+}
+.scene .box .block:nth-child(n+341) {
+  --delay2: -3.4s;
+}
+.scene .box .block:nth-child(20n+19) {
+  --delay1: -3.6s;
+}
+.scene .box .block:nth-child(n+361) {
+  --delay2: -3.6s;
+}
+.scene .box .block:nth-child(20n+20) {
+  --delay1: -3.8s;
+}
+.scene .box .block:nth-child(n+381) {
+  --delay2: -3.8s;
+}
+
+@-webkit-keyframes rising {
+  0% {
+    transform: translateZ(30px);
+  }
+  100% {
+    transform: translateZ(100px);
+  }
+}
+
+@keyframes rising {
+  0% {
+    transform: translateZ(30px);
+  }
+  100% {
+    transform: translateZ(100px);
+  }
+}
+input[type=submit] {
+  width: 100px;
+  height: 100px;
+  background-color: #ff3d3d;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  transform: rotateX(20deg) rotateY(20deg) rotateZ(-20deg);
+  position: absolute;
+  left: 60px;
+  bottom: 60px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  transform: rotateX(20deg) rotateY(20deg) rotateZ(-20deg) translateZ(20px);
+}
+input[type=submit]:hover ~ .box {
+  transform: rotateX(55deg) rotateZ(45deg);
+}/*# sourceMappingURL=style.css.map */

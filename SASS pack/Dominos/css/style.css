@@ -1,0 +1,186 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(#333 15%, #111 75%);
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.scene {
+  width: 100%;
+  height: 100vmin;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-45deg);
+  transition: 1s;
+}
+.scene .domin {
+  width: 100px;
+  height: 170px;
+  transform-style: preserve-3d;
+  transform: rotateY(90deg);
+  margin-top: 50px;
+  margin-right: 200px;
+  position: absolute;
+  transform-origin: bottom;
+  -webkit-animation: anime 1s ease-in;
+          animation: anime 1s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.scene .domin .face {
+  position: absolute;
+}
+.scene .domin .front, .scene .domin .behind {
+  background-color: #b4b4b4;
+}
+.scene .domin .bottom, .scene .domin .top {
+  background-color: #ff3333;
+}
+.scene .domin .left, .scene .domin .right {
+  background-color: #797979;
+}
+.scene .domin .front {
+  width: 100px;
+  height: 170px;
+  transform: translateZ(0);
+}
+.scene .domin .behind {
+  width: 100px;
+  height: 170px;
+  transform: translateZ(-20px);
+}
+.scene .domin .top {
+  width: 100px;
+  height: 20px;
+  transform-origin: bottom;
+  transform: rotateX(90deg) translateZ(20px);
+}
+.scene .domin .bottom {
+  width: 100px;
+  height: 20px;
+  transform-origin: top;
+  transform: rotateX(-90deg) translateZ(20px);
+  bottom: 0 !important;
+}
+.scene .domin .left {
+  width: 20px;
+  height: 170px;
+  transform-origin: right;
+  transform: rotateY(-90deg) translateZ(20px);
+  left: 0;
+}
+.scene .domin .right {
+  width: 20px;
+  height: 170px;
+  transform-origin: left;
+  transform: rotateY(90deg) translateZ(20px);
+  right: 0 !important;
+}
+.scene .domin:nth-child(1) {
+  left: 11.5%;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.scene .domin:nth-child(2) {
+  left: 23%;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.scene .domin:nth-child(3) {
+  left: 34.5%;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+.scene .domin:nth-child(4) {
+  left: 46%;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+.scene .domin:nth-child(5) {
+  left: 57.5%;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.scene .domin:nth-child(6) {
+  left: 69%;
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+.scene .domin:nth-child(7) {
+  left: 80.5%;
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+.scene .domin:nth-child(8) {
+  left: 92%;
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+.scene .domin:nth-child(9) {
+  left: 103.5%;
+  -webkit-animation-delay: 5.4s;
+          animation-delay: 5.4s;
+}
+.scene .domin:nth-child(10) {
+  left: 115%;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.scene .domin:nth-child(11) {
+  left: 126.5%;
+  -webkit-animation-delay: 6.6s;
+          animation-delay: 6.6s;
+}
+.scene .domin:nth-child(12) {
+  left: 138%;
+  -webkit-animation-delay: 7.2s;
+          animation-delay: 7.2s;
+}
+
+input[type=button] {
+  width: 100px;
+  height: 100px;
+  background-color: #ff2424;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  transform: rotateX(25deg) rotateY(25deg) rotateZ(-20deg);
+  transform-style: preserve-3d;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+input[type=button]:hover ~ .scene {
+  transform: rotateX(-30deg) rotateY(45deg);
+}
+
+input[type=button]:hover {
+  transform: rotateX(25deg) rotateY(25deg) rotateZ(-20deg) translateZ(40px);
+}
+
+@-webkit-keyframes anime {
+  from {
+    transform: rotateY(90deg) rotateX(0) translateX(0);
+  }
+  to {
+    transform: rotateY(90deg) rotateX(-83deg) translateY(15px);
+  }
+}
+
+@keyframes anime {
+  from {
+    transform: rotateY(90deg) rotateX(0) translateX(0);
+  }
+  to {
+    transform: rotateY(90deg) rotateX(-83deg) translateY(15px);
+  }
+}/*# sourceMappingURL=style.css.map */

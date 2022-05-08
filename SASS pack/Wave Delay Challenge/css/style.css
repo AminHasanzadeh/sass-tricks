@@ -1,0 +1,1631 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scene {
+  display: grid;
+  grid-template-columns: repeat(22, 24px);
+  grid-template-rows: repeat(22, 24px);
+  margin-top: 50px;
+}
+.scene .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-animation: dots 30s ease-in-out calc(var(--delay1) + var(--delay2)) infinite;
+          animation: dots 30s ease-in-out calc(var(--delay1) + var(--delay2)) infinite;
+}
+.scene .dot:nth-child(1) {
+  background-color: hsl(0deg, 50%, 70%);
+}
+.scene .dot:nth-child(2) {
+  background-color: hsl(0.7438016529deg, 50%, 70%);
+}
+.scene .dot:nth-child(3) {
+  background-color: hsl(1.4876033058deg, 50%, 70%);
+}
+.scene .dot:nth-child(4) {
+  background-color: hsl(2.2314049587deg, 50%, 70%);
+}
+.scene .dot:nth-child(5) {
+  background-color: hsl(2.9752066116deg, 50%, 70%);
+}
+.scene .dot:nth-child(6) {
+  background-color: hsl(3.7190082645deg, 50%, 70%);
+}
+.scene .dot:nth-child(7) {
+  background-color: hsl(4.4628099174deg, 50%, 70%);
+}
+.scene .dot:nth-child(8) {
+  background-color: hsl(5.2066115702deg, 50%, 70%);
+}
+.scene .dot:nth-child(9) {
+  background-color: hsl(5.9504132231deg, 50%, 70%);
+}
+.scene .dot:nth-child(10) {
+  background-color: hsl(6.694214876deg, 50%, 70%);
+}
+.scene .dot:nth-child(11) {
+  background-color: hsl(7.4380165289deg, 50%, 70%);
+}
+.scene .dot:nth-child(12) {
+  background-color: hsl(8.1818181818deg, 50%, 70%);
+}
+.scene .dot:nth-child(13) {
+  background-color: hsl(8.9256198347deg, 50%, 70%);
+}
+.scene .dot:nth-child(14) {
+  background-color: hsl(9.6694214876deg, 50%, 70%);
+}
+.scene .dot:nth-child(15) {
+  background-color: hsl(10.4132231405deg, 50%, 70%);
+}
+.scene .dot:nth-child(16) {
+  background-color: hsl(11.1570247934deg, 50%, 70%);
+}
+.scene .dot:nth-child(17) {
+  background-color: hsl(11.9008264463deg, 50%, 70%);
+}
+.scene .dot:nth-child(18) {
+  background-color: hsl(12.6446280992deg, 50%, 70%);
+}
+.scene .dot:nth-child(19) {
+  background-color: hsl(13.3884297521deg, 50%, 70%);
+}
+.scene .dot:nth-child(20) {
+  background-color: hsl(14.132231405deg, 50%, 70%);
+}
+.scene .dot:nth-child(21) {
+  background-color: hsl(14.8760330579deg, 50%, 70%);
+}
+.scene .dot:nth-child(22) {
+  background-color: hsl(15.6198347107deg, 50%, 70%);
+}
+.scene .dot:nth-child(23) {
+  background-color: hsl(16.3636363636deg, 50%, 70%);
+}
+.scene .dot:nth-child(24) {
+  background-color: hsl(17.1074380165deg, 50%, 70%);
+}
+.scene .dot:nth-child(25) {
+  background-color: hsl(17.8512396694deg, 50%, 70%);
+}
+.scene .dot:nth-child(26) {
+  background-color: hsl(18.5950413223deg, 50%, 70%);
+}
+.scene .dot:nth-child(27) {
+  background-color: hsl(19.3388429752deg, 50%, 70%);
+}
+.scene .dot:nth-child(28) {
+  background-color: hsl(20.0826446281deg, 50%, 70%);
+}
+.scene .dot:nth-child(29) {
+  background-color: hsl(20.826446281deg, 50%, 70%);
+}
+.scene .dot:nth-child(30) {
+  background-color: hsl(21.5702479339deg, 50%, 70%);
+}
+.scene .dot:nth-child(31) {
+  background-color: hsl(22.3140495868deg, 50%, 70%);
+}
+.scene .dot:nth-child(32) {
+  background-color: hsl(23.0578512397deg, 50%, 70%);
+}
+.scene .dot:nth-child(33) {
+  background-color: hsl(23.8016528926deg, 50%, 70%);
+}
+.scene .dot:nth-child(34) {
+  background-color: hsl(24.5454545455deg, 50%, 70%);
+}
+.scene .dot:nth-child(35) {
+  background-color: hsl(25.2892561983deg, 50%, 70%);
+}
+.scene .dot:nth-child(36) {
+  background-color: hsl(26.0330578512deg, 50%, 70%);
+}
+.scene .dot:nth-child(37) {
+  background-color: hsl(26.7768595041deg, 50%, 70%);
+}
+.scene .dot:nth-child(38) {
+  background-color: hsl(27.520661157deg, 50%, 70%);
+}
+.scene .dot:nth-child(39) {
+  background-color: hsl(28.2644628099deg, 50%, 70%);
+}
+.scene .dot:nth-child(40) {
+  background-color: hsl(29.0082644628deg, 50%, 70%);
+}
+.scene .dot:nth-child(41) {
+  background-color: hsl(29.7520661157deg, 50%, 70%);
+}
+.scene .dot:nth-child(42) {
+  background-color: hsl(30.4958677686deg, 50%, 70%);
+}
+.scene .dot:nth-child(43) {
+  background-color: hsl(31.2396694215deg, 50%, 70%);
+}
+.scene .dot:nth-child(44) {
+  background-color: hsl(31.9834710744deg, 50%, 70%);
+}
+.scene .dot:nth-child(45) {
+  background-color: hsl(32.7272727273deg, 50%, 70%);
+}
+.scene .dot:nth-child(46) {
+  background-color: hsl(33.4710743802deg, 50%, 70%);
+}
+.scene .dot:nth-child(47) {
+  background-color: hsl(34.2148760331deg, 50%, 70%);
+}
+.scene .dot:nth-child(48) {
+  background-color: hsl(34.958677686deg, 50%, 70%);
+}
+.scene .dot:nth-child(49) {
+  background-color: hsl(35.7024793388deg, 50%, 70%);
+}
+.scene .dot:nth-child(50) {
+  background-color: hsl(36.4462809917deg, 50%, 70%);
+}
+.scene .dot:nth-child(51) {
+  background-color: hsl(37.1900826446deg, 50%, 70%);
+}
+.scene .dot:nth-child(52) {
+  background-color: hsl(37.9338842975deg, 50%, 70%);
+}
+.scene .dot:nth-child(53) {
+  background-color: hsl(38.6776859504deg, 50%, 70%);
+}
+.scene .dot:nth-child(54) {
+  background-color: hsl(39.4214876033deg, 50%, 70%);
+}
+.scene .dot:nth-child(55) {
+  background-color: hsl(40.1652892562deg, 50%, 70%);
+}
+.scene .dot:nth-child(56) {
+  background-color: hsl(40.9090909091deg, 50%, 70%);
+}
+.scene .dot:nth-child(57) {
+  background-color: hsl(41.652892562deg, 50%, 70%);
+}
+.scene .dot:nth-child(58) {
+  background-color: hsl(42.3966942149deg, 50%, 70%);
+}
+.scene .dot:nth-child(59) {
+  background-color: hsl(43.1404958678deg, 50%, 70%);
+}
+.scene .dot:nth-child(60) {
+  background-color: hsl(43.8842975207deg, 50%, 70%);
+}
+.scene .dot:nth-child(61) {
+  background-color: hsl(44.6280991736deg, 50%, 70%);
+}
+.scene .dot:nth-child(62) {
+  background-color: hsl(45.3719008264deg, 50%, 70%);
+}
+.scene .dot:nth-child(63) {
+  background-color: hsl(46.1157024793deg, 50%, 70%);
+}
+.scene .dot:nth-child(64) {
+  background-color: hsl(46.8595041322deg, 50%, 70%);
+}
+.scene .dot:nth-child(65) {
+  background-color: hsl(47.6033057851deg, 50%, 70%);
+}
+.scene .dot:nth-child(66) {
+  background-color: hsl(48.347107438deg, 50%, 70%);
+}
+.scene .dot:nth-child(67) {
+  background-color: hsl(49.0909090909deg, 50%, 70%);
+}
+.scene .dot:nth-child(68) {
+  background-color: hsl(49.8347107438deg, 50%, 70%);
+}
+.scene .dot:nth-child(69) {
+  background-color: hsl(50.5785123967deg, 50%, 70%);
+}
+.scene .dot:nth-child(70) {
+  background-color: hsl(51.3223140496deg, 50%, 70%);
+}
+.scene .dot:nth-child(71) {
+  background-color: hsl(52.0661157025deg, 50%, 70%);
+}
+.scene .dot:nth-child(72) {
+  background-color: hsl(52.8099173554deg, 50%, 70%);
+}
+.scene .dot:nth-child(73) {
+  background-color: hsl(53.5537190083deg, 50%, 70%);
+}
+.scene .dot:nth-child(74) {
+  background-color: hsl(54.2975206612deg, 50%, 70%);
+}
+.scene .dot:nth-child(75) {
+  background-color: hsl(55.041322314deg, 50%, 70%);
+}
+.scene .dot:nth-child(76) {
+  background-color: hsl(55.7851239669deg, 50%, 70%);
+}
+.scene .dot:nth-child(77) {
+  background-color: hsl(56.5289256198deg, 50%, 70%);
+}
+.scene .dot:nth-child(78) {
+  background-color: hsl(57.2727272727deg, 50%, 70%);
+}
+.scene .dot:nth-child(79) {
+  background-color: hsl(58.0165289256deg, 50%, 70%);
+}
+.scene .dot:nth-child(80) {
+  background-color: hsl(58.7603305785deg, 50%, 70%);
+}
+.scene .dot:nth-child(81) {
+  background-color: hsl(59.5041322314deg, 50%, 70%);
+}
+.scene .dot:nth-child(82) {
+  background-color: hsl(60.2479338843deg, 50%, 70%);
+}
+.scene .dot:nth-child(83) {
+  background-color: hsl(60.9917355372deg, 50%, 70%);
+}
+.scene .dot:nth-child(84) {
+  background-color: hsl(61.7355371901deg, 50%, 70%);
+}
+.scene .dot:nth-child(85) {
+  background-color: hsl(62.479338843deg, 50%, 70%);
+}
+.scene .dot:nth-child(86) {
+  background-color: hsl(63.2231404959deg, 50%, 70%);
+}
+.scene .dot:nth-child(87) {
+  background-color: hsl(63.9669421488deg, 50%, 70%);
+}
+.scene .dot:nth-child(88) {
+  background-color: hsl(64.7107438017deg, 50%, 70%);
+}
+.scene .dot:nth-child(89) {
+  background-color: hsl(65.4545454545deg, 50%, 70%);
+}
+.scene .dot:nth-child(90) {
+  background-color: hsl(66.1983471074deg, 50%, 70%);
+}
+.scene .dot:nth-child(91) {
+  background-color: hsl(66.9421487603deg, 50%, 70%);
+}
+.scene .dot:nth-child(92) {
+  background-color: hsl(67.6859504132deg, 50%, 70%);
+}
+.scene .dot:nth-child(93) {
+  background-color: hsl(68.4297520661deg, 50%, 70%);
+}
+.scene .dot:nth-child(94) {
+  background-color: hsl(69.173553719deg, 50%, 70%);
+}
+.scene .dot:nth-child(95) {
+  background-color: hsl(69.9173553719deg, 50%, 70%);
+}
+.scene .dot:nth-child(96) {
+  background-color: hsl(70.6611570248deg, 50%, 70%);
+}
+.scene .dot:nth-child(97) {
+  background-color: hsl(71.4049586777deg, 50%, 70%);
+}
+.scene .dot:nth-child(98) {
+  background-color: hsl(72.1487603306deg, 50%, 70%);
+}
+.scene .dot:nth-child(99) {
+  background-color: hsl(72.8925619835deg, 50%, 70%);
+}
+.scene .dot:nth-child(100) {
+  background-color: hsl(73.6363636364deg, 50%, 70%);
+}
+.scene .dot:nth-child(101) {
+  background-color: hsl(74.3801652893deg, 50%, 70%);
+}
+.scene .dot:nth-child(102) {
+  background-color: hsl(75.1239669421deg, 50%, 70%);
+}
+.scene .dot:nth-child(103) {
+  background-color: hsl(75.867768595deg, 50%, 70%);
+}
+.scene .dot:nth-child(104) {
+  background-color: hsl(76.6115702479deg, 50%, 70%);
+}
+.scene .dot:nth-child(105) {
+  background-color: hsl(77.3553719008deg, 50%, 70%);
+}
+.scene .dot:nth-child(106) {
+  background-color: hsl(78.0991735537deg, 50%, 70%);
+}
+.scene .dot:nth-child(107) {
+  background-color: hsl(78.8429752066deg, 50%, 70%);
+}
+.scene .dot:nth-child(108) {
+  background-color: hsl(79.5867768595deg, 50%, 70%);
+}
+.scene .dot:nth-child(109) {
+  background-color: hsl(80.3305785124deg, 50%, 70%);
+}
+.scene .dot:nth-child(110) {
+  background-color: hsl(81.0743801653deg, 50%, 70%);
+}
+.scene .dot:nth-child(111) {
+  background-color: hsl(81.8181818182deg, 50%, 70%);
+}
+.scene .dot:nth-child(112) {
+  background-color: hsl(82.5619834711deg, 50%, 70%);
+}
+.scene .dot:nth-child(113) {
+  background-color: hsl(83.305785124deg, 50%, 70%);
+}
+.scene .dot:nth-child(114) {
+  background-color: hsl(84.0495867769deg, 50%, 70%);
+}
+.scene .dot:nth-child(115) {
+  background-color: hsl(84.7933884298deg, 50%, 70%);
+}
+.scene .dot:nth-child(116) {
+  background-color: hsl(85.5371900826deg, 50%, 70%);
+}
+.scene .dot:nth-child(117) {
+  background-color: hsl(86.2809917355deg, 50%, 70%);
+}
+.scene .dot:nth-child(118) {
+  background-color: hsl(87.0247933884deg, 50%, 70%);
+}
+.scene .dot:nth-child(119) {
+  background-color: hsl(87.7685950413deg, 50%, 70%);
+}
+.scene .dot:nth-child(120) {
+  background-color: hsl(88.5123966942deg, 50%, 70%);
+}
+.scene .dot:nth-child(121) {
+  background-color: hsl(89.2561983471deg, 50%, 70%);
+}
+.scene .dot:nth-child(122) {
+  background-color: hsl(90deg, 50%, 70%);
+}
+.scene .dot:nth-child(123) {
+  background-color: hsl(90.7438016529deg, 50%, 70%);
+}
+.scene .dot:nth-child(124) {
+  background-color: hsl(91.4876033058deg, 50%, 70%);
+}
+.scene .dot:nth-child(125) {
+  background-color: hsl(92.2314049587deg, 50%, 70%);
+}
+.scene .dot:nth-child(126) {
+  background-color: hsl(92.9752066116deg, 50%, 70%);
+}
+.scene .dot:nth-child(127) {
+  background-color: hsl(93.7190082645deg, 50%, 70%);
+}
+.scene .dot:nth-child(128) {
+  background-color: hsl(94.4628099174deg, 50%, 70%);
+}
+.scene .dot:nth-child(129) {
+  background-color: hsl(95.2066115702deg, 50%, 70%);
+}
+.scene .dot:nth-child(130) {
+  background-color: hsl(95.9504132231deg, 50%, 70%);
+}
+.scene .dot:nth-child(131) {
+  background-color: hsl(96.694214876deg, 50%, 70%);
+}
+.scene .dot:nth-child(132) {
+  background-color: hsl(97.4380165289deg, 50%, 70%);
+}
+.scene .dot:nth-child(133) {
+  background-color: hsl(98.1818181818deg, 50%, 70%);
+}
+.scene .dot:nth-child(134) {
+  background-color: hsl(98.9256198347deg, 50%, 70%);
+}
+.scene .dot:nth-child(135) {
+  background-color: hsl(99.6694214876deg, 50%, 70%);
+}
+.scene .dot:nth-child(136) {
+  background-color: hsl(100.4132231405deg, 50%, 70%);
+}
+.scene .dot:nth-child(137) {
+  background-color: hsl(101.1570247934deg, 50%, 70%);
+}
+.scene .dot:nth-child(138) {
+  background-color: hsl(101.9008264463deg, 50%, 70%);
+}
+.scene .dot:nth-child(139) {
+  background-color: hsl(102.6446280992deg, 50%, 70%);
+}
+.scene .dot:nth-child(140) {
+  background-color: hsl(103.3884297521deg, 50%, 70%);
+}
+.scene .dot:nth-child(141) {
+  background-color: hsl(104.132231405deg, 50%, 70%);
+}
+.scene .dot:nth-child(142) {
+  background-color: hsl(104.8760330579deg, 50%, 70%);
+}
+.scene .dot:nth-child(143) {
+  background-color: hsl(105.6198347107deg, 50%, 70%);
+}
+.scene .dot:nth-child(144) {
+  background-color: hsl(106.3636363636deg, 50%, 70%);
+}
+.scene .dot:nth-child(145) {
+  background-color: hsl(107.1074380165deg, 50%, 70%);
+}
+.scene .dot:nth-child(146) {
+  background-color: hsl(107.8512396694deg, 50%, 70%);
+}
+.scene .dot:nth-child(147) {
+  background-color: hsl(108.5950413223deg, 50%, 70%);
+}
+.scene .dot:nth-child(148) {
+  background-color: hsl(109.3388429752deg, 50%, 70%);
+}
+.scene .dot:nth-child(149) {
+  background-color: hsl(110.0826446281deg, 50%, 70%);
+}
+.scene .dot:nth-child(150) {
+  background-color: hsl(110.826446281deg, 50%, 70%);
+}
+.scene .dot:nth-child(151) {
+  background-color: hsl(111.5702479339deg, 50%, 70%);
+}
+.scene .dot:nth-child(152) {
+  background-color: hsl(112.3140495868deg, 50%, 70%);
+}
+.scene .dot:nth-child(153) {
+  background-color: hsl(113.0578512397deg, 50%, 70%);
+}
+.scene .dot:nth-child(154) {
+  background-color: hsl(113.8016528926deg, 50%, 70%);
+}
+.scene .dot:nth-child(155) {
+  background-color: hsl(114.5454545455deg, 50%, 70%);
+}
+.scene .dot:nth-child(156) {
+  background-color: hsl(115.2892561983deg, 50%, 70%);
+}
+.scene .dot:nth-child(157) {
+  background-color: hsl(116.0330578512deg, 50%, 70%);
+}
+.scene .dot:nth-child(158) {
+  background-color: hsl(116.7768595041deg, 50%, 70%);
+}
+.scene .dot:nth-child(159) {
+  background-color: hsl(117.520661157deg, 50%, 70%);
+}
+.scene .dot:nth-child(160) {
+  background-color: hsl(118.2644628099deg, 50%, 70%);
+}
+.scene .dot:nth-child(161) {
+  background-color: hsl(119.0082644628deg, 50%, 70%);
+}
+.scene .dot:nth-child(162) {
+  background-color: hsl(119.7520661157deg, 50%, 70%);
+}
+.scene .dot:nth-child(163) {
+  background-color: hsl(120.4958677686deg, 50%, 70%);
+}
+.scene .dot:nth-child(164) {
+  background-color: hsl(121.2396694215deg, 50%, 70%);
+}
+.scene .dot:nth-child(165) {
+  background-color: hsl(121.9834710744deg, 50%, 70%);
+}
+.scene .dot:nth-child(166) {
+  background-color: hsl(122.7272727273deg, 50%, 70%);
+}
+.scene .dot:nth-child(167) {
+  background-color: hsl(123.4710743802deg, 50%, 70%);
+}
+.scene .dot:nth-child(168) {
+  background-color: hsl(124.2148760331deg, 50%, 70%);
+}
+.scene .dot:nth-child(169) {
+  background-color: hsl(124.958677686deg, 50%, 70%);
+}
+.scene .dot:nth-child(170) {
+  background-color: hsl(125.7024793388deg, 50%, 70%);
+}
+.scene .dot:nth-child(171) {
+  background-color: hsl(126.4462809917deg, 50%, 70%);
+}
+.scene .dot:nth-child(172) {
+  background-color: hsl(127.1900826446deg, 50%, 70%);
+}
+.scene .dot:nth-child(173) {
+  background-color: hsl(127.9338842975deg, 50%, 70%);
+}
+.scene .dot:nth-child(174) {
+  background-color: hsl(128.6776859504deg, 50%, 70%);
+}
+.scene .dot:nth-child(175) {
+  background-color: hsl(129.4214876033deg, 50%, 70%);
+}
+.scene .dot:nth-child(176) {
+  background-color: hsl(130.1652892562deg, 50%, 70%);
+}
+.scene .dot:nth-child(177) {
+  background-color: hsl(130.9090909091deg, 50%, 70%);
+}
+.scene .dot:nth-child(178) {
+  background-color: hsl(131.652892562deg, 50%, 70%);
+}
+.scene .dot:nth-child(179) {
+  background-color: hsl(132.3966942149deg, 50%, 70%);
+}
+.scene .dot:nth-child(180) {
+  background-color: hsl(133.1404958678deg, 50%, 70%);
+}
+.scene .dot:nth-child(181) {
+  background-color: hsl(133.8842975207deg, 50%, 70%);
+}
+.scene .dot:nth-child(182) {
+  background-color: hsl(134.6280991736deg, 50%, 70%);
+}
+.scene .dot:nth-child(183) {
+  background-color: hsl(135.3719008264deg, 50%, 70%);
+}
+.scene .dot:nth-child(184) {
+  background-color: hsl(136.1157024793deg, 50%, 70%);
+}
+.scene .dot:nth-child(185) {
+  background-color: hsl(136.8595041322deg, 50%, 70%);
+}
+.scene .dot:nth-child(186) {
+  background-color: hsl(137.6033057851deg, 50%, 70%);
+}
+.scene .dot:nth-child(187) {
+  background-color: hsl(138.347107438deg, 50%, 70%);
+}
+.scene .dot:nth-child(188) {
+  background-color: hsl(139.0909090909deg, 50%, 70%);
+}
+.scene .dot:nth-child(189) {
+  background-color: hsl(139.8347107438deg, 50%, 70%);
+}
+.scene .dot:nth-child(190) {
+  background-color: hsl(140.5785123967deg, 50%, 70%);
+}
+.scene .dot:nth-child(191) {
+  background-color: hsl(141.3223140496deg, 50%, 70%);
+}
+.scene .dot:nth-child(192) {
+  background-color: hsl(142.0661157025deg, 50%, 70%);
+}
+.scene .dot:nth-child(193) {
+  background-color: hsl(142.8099173554deg, 50%, 70%);
+}
+.scene .dot:nth-child(194) {
+  background-color: hsl(143.5537190083deg, 50%, 70%);
+}
+.scene .dot:nth-child(195) {
+  background-color: hsl(144.2975206612deg, 50%, 70%);
+}
+.scene .dot:nth-child(196) {
+  background-color: hsl(145.041322314deg, 50%, 70%);
+}
+.scene .dot:nth-child(197) {
+  background-color: hsl(145.7851239669deg, 50%, 70%);
+}
+.scene .dot:nth-child(198) {
+  background-color: hsl(146.5289256198deg, 50%, 70%);
+}
+.scene .dot:nth-child(199) {
+  background-color: hsl(147.2727272727deg, 50%, 70%);
+}
+.scene .dot:nth-child(200) {
+  background-color: hsl(148.0165289256deg, 50%, 70%);
+}
+.scene .dot:nth-child(201) {
+  background-color: hsl(148.7603305785deg, 50%, 70%);
+}
+.scene .dot:nth-child(202) {
+  background-color: hsl(149.5041322314deg, 50%, 70%);
+}
+.scene .dot:nth-child(203) {
+  background-color: hsl(150.2479338843deg, 50%, 70%);
+}
+.scene .dot:nth-child(204) {
+  background-color: hsl(150.9917355372deg, 50%, 70%);
+}
+.scene .dot:nth-child(205) {
+  background-color: hsl(151.7355371901deg, 50%, 70%);
+}
+.scene .dot:nth-child(206) {
+  background-color: hsl(152.479338843deg, 50%, 70%);
+}
+.scene .dot:nth-child(207) {
+  background-color: hsl(153.2231404959deg, 50%, 70%);
+}
+.scene .dot:nth-child(208) {
+  background-color: hsl(153.9669421488deg, 50%, 70%);
+}
+.scene .dot:nth-child(209) {
+  background-color: hsl(154.7107438017deg, 50%, 70%);
+}
+.scene .dot:nth-child(210) {
+  background-color: hsl(155.4545454545deg, 50%, 70%);
+}
+.scene .dot:nth-child(211) {
+  background-color: hsl(156.1983471074deg, 50%, 70%);
+}
+.scene .dot:nth-child(212) {
+  background-color: hsl(156.9421487603deg, 50%, 70%);
+}
+.scene .dot:nth-child(213) {
+  background-color: hsl(157.6859504132deg, 50%, 70%);
+}
+.scene .dot:nth-child(214) {
+  background-color: hsl(158.4297520661deg, 50%, 70%);
+}
+.scene .dot:nth-child(215) {
+  background-color: hsl(159.173553719deg, 50%, 70%);
+}
+.scene .dot:nth-child(216) {
+  background-color: hsl(159.9173553719deg, 50%, 70%);
+}
+.scene .dot:nth-child(217) {
+  background-color: hsl(160.6611570248deg, 50%, 70%);
+}
+.scene .dot:nth-child(218) {
+  background-color: hsl(161.4049586777deg, 50%, 70%);
+}
+.scene .dot:nth-child(219) {
+  background-color: hsl(162.1487603306deg, 50%, 70%);
+}
+.scene .dot:nth-child(220) {
+  background-color: hsl(162.8925619835deg, 50%, 70%);
+}
+.scene .dot:nth-child(221) {
+  background-color: hsl(163.6363636364deg, 50%, 70%);
+}
+.scene .dot:nth-child(222) {
+  background-color: hsl(164.3801652893deg, 50%, 70%);
+}
+.scene .dot:nth-child(223) {
+  background-color: hsl(165.1239669421deg, 50%, 70%);
+}
+.scene .dot:nth-child(224) {
+  background-color: hsl(165.867768595deg, 50%, 70%);
+}
+.scene .dot:nth-child(225) {
+  background-color: hsl(166.6115702479deg, 50%, 70%);
+}
+.scene .dot:nth-child(226) {
+  background-color: hsl(167.3553719008deg, 50%, 70%);
+}
+.scene .dot:nth-child(227) {
+  background-color: hsl(168.0991735537deg, 50%, 70%);
+}
+.scene .dot:nth-child(228) {
+  background-color: hsl(168.8429752066deg, 50%, 70%);
+}
+.scene .dot:nth-child(229) {
+  background-color: hsl(169.5867768595deg, 50%, 70%);
+}
+.scene .dot:nth-child(230) {
+  background-color: hsl(170.3305785124deg, 50%, 70%);
+}
+.scene .dot:nth-child(231) {
+  background-color: hsl(171.0743801653deg, 50%, 70%);
+}
+.scene .dot:nth-child(232) {
+  background-color: hsl(171.8181818182deg, 50%, 70%);
+}
+.scene .dot:nth-child(233) {
+  background-color: hsl(172.5619834711deg, 50%, 70%);
+}
+.scene .dot:nth-child(234) {
+  background-color: hsl(173.305785124deg, 50%, 70%);
+}
+.scene .dot:nth-child(235) {
+  background-color: hsl(174.0495867769deg, 50%, 70%);
+}
+.scene .dot:nth-child(236) {
+  background-color: hsl(174.7933884298deg, 50%, 70%);
+}
+.scene .dot:nth-child(237) {
+  background-color: hsl(175.5371900826deg, 50%, 70%);
+}
+.scene .dot:nth-child(238) {
+  background-color: hsl(176.2809917355deg, 50%, 70%);
+}
+.scene .dot:nth-child(239) {
+  background-color: hsl(177.0247933884deg, 50%, 70%);
+}
+.scene .dot:nth-child(240) {
+  background-color: hsl(177.7685950413deg, 50%, 70%);
+}
+.scene .dot:nth-child(241) {
+  background-color: hsl(178.5123966942deg, 50%, 70%);
+}
+.scene .dot:nth-child(242) {
+  background-color: hsl(179.2561983471deg, 50%, 70%);
+}
+.scene .dot:nth-child(243) {
+  background-color: hsl(180deg, 50%, 70%);
+}
+.scene .dot:nth-child(244) {
+  background-color: hsl(180.7438016529deg, 50%, 70%);
+}
+.scene .dot:nth-child(245) {
+  background-color: hsl(181.4876033058deg, 50%, 70%);
+}
+.scene .dot:nth-child(246) {
+  background-color: hsl(182.2314049587deg, 50%, 70%);
+}
+.scene .dot:nth-child(247) {
+  background-color: hsl(182.9752066116deg, 50%, 70%);
+}
+.scene .dot:nth-child(248) {
+  background-color: hsl(183.7190082645deg, 50%, 70%);
+}
+.scene .dot:nth-child(249) {
+  background-color: hsl(184.4628099174deg, 50%, 70%);
+}
+.scene .dot:nth-child(250) {
+  background-color: hsl(185.2066115702deg, 50%, 70%);
+}
+.scene .dot:nth-child(251) {
+  background-color: hsl(185.9504132231deg, 50%, 70%);
+}
+.scene .dot:nth-child(252) {
+  background-color: hsl(186.694214876deg, 50%, 70%);
+}
+.scene .dot:nth-child(253) {
+  background-color: hsl(187.4380165289deg, 50%, 70%);
+}
+.scene .dot:nth-child(254) {
+  background-color: hsl(188.1818181818deg, 50%, 70%);
+}
+.scene .dot:nth-child(255) {
+  background-color: hsl(188.9256198347deg, 50%, 70%);
+}
+.scene .dot:nth-child(256) {
+  background-color: hsl(189.6694214876deg, 50%, 70%);
+}
+.scene .dot:nth-child(257) {
+  background-color: hsl(190.4132231405deg, 50%, 70%);
+}
+.scene .dot:nth-child(258) {
+  background-color: hsl(191.1570247934deg, 50%, 70%);
+}
+.scene .dot:nth-child(259) {
+  background-color: hsl(191.9008264463deg, 50%, 70%);
+}
+.scene .dot:nth-child(260) {
+  background-color: hsl(192.6446280992deg, 50%, 70%);
+}
+.scene .dot:nth-child(261) {
+  background-color: hsl(193.3884297521deg, 50%, 70%);
+}
+.scene .dot:nth-child(262) {
+  background-color: hsl(194.132231405deg, 50%, 70%);
+}
+.scene .dot:nth-child(263) {
+  background-color: hsl(194.8760330579deg, 50%, 70%);
+}
+.scene .dot:nth-child(264) {
+  background-color: hsl(195.6198347107deg, 50%, 70%);
+}
+.scene .dot:nth-child(265) {
+  background-color: hsl(196.3636363636deg, 50%, 70%);
+}
+.scene .dot:nth-child(266) {
+  background-color: hsl(197.1074380165deg, 50%, 70%);
+}
+.scene .dot:nth-child(267) {
+  background-color: hsl(197.8512396694deg, 50%, 70%);
+}
+.scene .dot:nth-child(268) {
+  background-color: hsl(198.5950413223deg, 50%, 70%);
+}
+.scene .dot:nth-child(269) {
+  background-color: hsl(199.3388429752deg, 50%, 70%);
+}
+.scene .dot:nth-child(270) {
+  background-color: hsl(200.0826446281deg, 50%, 70%);
+}
+.scene .dot:nth-child(271) {
+  background-color: hsl(200.826446281deg, 50%, 70%);
+}
+.scene .dot:nth-child(272) {
+  background-color: hsl(201.5702479339deg, 50%, 70%);
+}
+.scene .dot:nth-child(273) {
+  background-color: hsl(202.3140495868deg, 50%, 70%);
+}
+.scene .dot:nth-child(274) {
+  background-color: hsl(203.0578512397deg, 50%, 70%);
+}
+.scene .dot:nth-child(275) {
+  background-color: hsl(203.8016528926deg, 50%, 70%);
+}
+.scene .dot:nth-child(276) {
+  background-color: hsl(204.5454545455deg, 50%, 70%);
+}
+.scene .dot:nth-child(277) {
+  background-color: hsl(205.2892561983deg, 50%, 70%);
+}
+.scene .dot:nth-child(278) {
+  background-color: hsl(206.0330578512deg, 50%, 70%);
+}
+.scene .dot:nth-child(279) {
+  background-color: hsl(206.7768595041deg, 50%, 70%);
+}
+.scene .dot:nth-child(280) {
+  background-color: hsl(207.520661157deg, 50%, 70%);
+}
+.scene .dot:nth-child(281) {
+  background-color: hsl(208.2644628099deg, 50%, 70%);
+}
+.scene .dot:nth-child(282) {
+  background-color: hsl(209.0082644628deg, 50%, 70%);
+}
+.scene .dot:nth-child(283) {
+  background-color: hsl(209.7520661157deg, 50%, 70%);
+}
+.scene .dot:nth-child(284) {
+  background-color: hsl(210.4958677686deg, 50%, 70%);
+}
+.scene .dot:nth-child(285) {
+  background-color: hsl(211.2396694215deg, 50%, 70%);
+}
+.scene .dot:nth-child(286) {
+  background-color: hsl(211.9834710744deg, 50%, 70%);
+}
+.scene .dot:nth-child(287) {
+  background-color: hsl(212.7272727273deg, 50%, 70%);
+}
+.scene .dot:nth-child(288) {
+  background-color: hsl(213.4710743802deg, 50%, 70%);
+}
+.scene .dot:nth-child(289) {
+  background-color: hsl(214.2148760331deg, 50%, 70%);
+}
+.scene .dot:nth-child(290) {
+  background-color: hsl(214.958677686deg, 50%, 70%);
+}
+.scene .dot:nth-child(291) {
+  background-color: hsl(215.7024793388deg, 50%, 70%);
+}
+.scene .dot:nth-child(292) {
+  background-color: hsl(216.4462809917deg, 50%, 70%);
+}
+.scene .dot:nth-child(293) {
+  background-color: hsl(217.1900826446deg, 50%, 70%);
+}
+.scene .dot:nth-child(294) {
+  background-color: hsl(217.9338842975deg, 50%, 70%);
+}
+.scene .dot:nth-child(295) {
+  background-color: hsl(218.6776859504deg, 50%, 70%);
+}
+.scene .dot:nth-child(296) {
+  background-color: hsl(219.4214876033deg, 50%, 70%);
+}
+.scene .dot:nth-child(297) {
+  background-color: hsl(220.1652892562deg, 50%, 70%);
+}
+.scene .dot:nth-child(298) {
+  background-color: hsl(220.9090909091deg, 50%, 70%);
+}
+.scene .dot:nth-child(299) {
+  background-color: hsl(221.652892562deg, 50%, 70%);
+}
+.scene .dot:nth-child(300) {
+  background-color: hsl(222.3966942149deg, 50%, 70%);
+}
+.scene .dot:nth-child(301) {
+  background-color: hsl(223.1404958678deg, 50%, 70%);
+}
+.scene .dot:nth-child(302) {
+  background-color: hsl(223.8842975207deg, 50%, 70%);
+}
+.scene .dot:nth-child(303) {
+  background-color: hsl(224.6280991736deg, 50%, 70%);
+}
+.scene .dot:nth-child(304) {
+  background-color: hsl(225.3719008264deg, 50%, 70%);
+}
+.scene .dot:nth-child(305) {
+  background-color: hsl(226.1157024793deg, 50%, 70%);
+}
+.scene .dot:nth-child(306) {
+  background-color: hsl(226.8595041322deg, 50%, 70%);
+}
+.scene .dot:nth-child(307) {
+  background-color: hsl(227.6033057851deg, 50%, 70%);
+}
+.scene .dot:nth-child(308) {
+  background-color: hsl(228.347107438deg, 50%, 70%);
+}
+.scene .dot:nth-child(309) {
+  background-color: hsl(229.0909090909deg, 50%, 70%);
+}
+.scene .dot:nth-child(310) {
+  background-color: hsl(229.8347107438deg, 50%, 70%);
+}
+.scene .dot:nth-child(311) {
+  background-color: hsl(230.5785123967deg, 50%, 70%);
+}
+.scene .dot:nth-child(312) {
+  background-color: hsl(231.3223140496deg, 50%, 70%);
+}
+.scene .dot:nth-child(313) {
+  background-color: hsl(232.0661157025deg, 50%, 70%);
+}
+.scene .dot:nth-child(314) {
+  background-color: hsl(232.8099173554deg, 50%, 70%);
+}
+.scene .dot:nth-child(315) {
+  background-color: hsl(233.5537190083deg, 50%, 70%);
+}
+.scene .dot:nth-child(316) {
+  background-color: hsl(234.2975206612deg, 50%, 70%);
+}
+.scene .dot:nth-child(317) {
+  background-color: hsl(235.041322314deg, 50%, 70%);
+}
+.scene .dot:nth-child(318) {
+  background-color: hsl(235.7851239669deg, 50%, 70%);
+}
+.scene .dot:nth-child(319) {
+  background-color: hsl(236.5289256198deg, 50%, 70%);
+}
+.scene .dot:nth-child(320) {
+  background-color: hsl(237.2727272727deg, 50%, 70%);
+}
+.scene .dot:nth-child(321) {
+  background-color: hsl(238.0165289256deg, 50%, 70%);
+}
+.scene .dot:nth-child(322) {
+  background-color: hsl(238.7603305785deg, 50%, 70%);
+}
+.scene .dot:nth-child(323) {
+  background-color: hsl(239.5041322314deg, 50%, 70%);
+}
+.scene .dot:nth-child(324) {
+  background-color: hsl(240.2479338843deg, 50%, 70%);
+}
+.scene .dot:nth-child(325) {
+  background-color: hsl(240.9917355372deg, 50%, 70%);
+}
+.scene .dot:nth-child(326) {
+  background-color: hsl(241.7355371901deg, 50%, 70%);
+}
+.scene .dot:nth-child(327) {
+  background-color: hsl(242.479338843deg, 50%, 70%);
+}
+.scene .dot:nth-child(328) {
+  background-color: hsl(243.2231404959deg, 50%, 70%);
+}
+.scene .dot:nth-child(329) {
+  background-color: hsl(243.9669421488deg, 50%, 70%);
+}
+.scene .dot:nth-child(330) {
+  background-color: hsl(244.7107438017deg, 50%, 70%);
+}
+.scene .dot:nth-child(331) {
+  background-color: hsl(245.4545454545deg, 50%, 70%);
+}
+.scene .dot:nth-child(332) {
+  background-color: hsl(246.1983471074deg, 50%, 70%);
+}
+.scene .dot:nth-child(333) {
+  background-color: hsl(246.9421487603deg, 50%, 70%);
+}
+.scene .dot:nth-child(334) {
+  background-color: hsl(247.6859504132deg, 50%, 70%);
+}
+.scene .dot:nth-child(335) {
+  background-color: hsl(248.4297520661deg, 50%, 70%);
+}
+.scene .dot:nth-child(336) {
+  background-color: hsl(249.173553719deg, 50%, 70%);
+}
+.scene .dot:nth-child(337) {
+  background-color: hsl(249.9173553719deg, 50%, 70%);
+}
+.scene .dot:nth-child(338) {
+  background-color: hsl(250.6611570248deg, 50%, 70%);
+}
+.scene .dot:nth-child(339) {
+  background-color: hsl(251.4049586777deg, 50%, 70%);
+}
+.scene .dot:nth-child(340) {
+  background-color: hsl(252.1487603306deg, 50%, 70%);
+}
+.scene .dot:nth-child(341) {
+  background-color: hsl(252.8925619835deg, 50%, 70%);
+}
+.scene .dot:nth-child(342) {
+  background-color: hsl(253.6363636364deg, 50%, 70%);
+}
+.scene .dot:nth-child(343) {
+  background-color: hsl(254.3801652893deg, 50%, 70%);
+}
+.scene .dot:nth-child(344) {
+  background-color: hsl(255.1239669421deg, 50%, 70%);
+}
+.scene .dot:nth-child(345) {
+  background-color: hsl(255.867768595deg, 50%, 70%);
+}
+.scene .dot:nth-child(346) {
+  background-color: hsl(256.6115702479deg, 50%, 70%);
+}
+.scene .dot:nth-child(347) {
+  background-color: hsl(257.3553719008deg, 50%, 70%);
+}
+.scene .dot:nth-child(348) {
+  background-color: hsl(258.0991735537deg, 50%, 70%);
+}
+.scene .dot:nth-child(349) {
+  background-color: hsl(258.8429752066deg, 50%, 70%);
+}
+.scene .dot:nth-child(350) {
+  background-color: hsl(259.5867768595deg, 50%, 70%);
+}
+.scene .dot:nth-child(351) {
+  background-color: hsl(260.3305785124deg, 50%, 70%);
+}
+.scene .dot:nth-child(352) {
+  background-color: hsl(261.0743801653deg, 50%, 70%);
+}
+.scene .dot:nth-child(353) {
+  background-color: hsl(261.8181818182deg, 50%, 70%);
+}
+.scene .dot:nth-child(354) {
+  background-color: hsl(262.5619834711deg, 50%, 70%);
+}
+.scene .dot:nth-child(355) {
+  background-color: hsl(263.305785124deg, 50%, 70%);
+}
+.scene .dot:nth-child(356) {
+  background-color: hsl(264.0495867769deg, 50%, 70%);
+}
+.scene .dot:nth-child(357) {
+  background-color: hsl(264.7933884298deg, 50%, 70%);
+}
+.scene .dot:nth-child(358) {
+  background-color: hsl(265.5371900826deg, 50%, 70%);
+}
+.scene .dot:nth-child(359) {
+  background-color: hsl(266.2809917355deg, 50%, 70%);
+}
+.scene .dot:nth-child(360) {
+  background-color: hsl(267.0247933884deg, 50%, 70%);
+}
+.scene .dot:nth-child(361) {
+  background-color: hsl(267.7685950413deg, 50%, 70%);
+}
+.scene .dot:nth-child(362) {
+  background-color: hsl(268.5123966942deg, 50%, 70%);
+}
+.scene .dot:nth-child(363) {
+  background-color: hsl(269.2561983471deg, 50%, 70%);
+}
+.scene .dot:nth-child(364) {
+  background-color: hsl(270deg, 50%, 70%);
+}
+.scene .dot:nth-child(365) {
+  background-color: hsl(270.7438016529deg, 50%, 70%);
+}
+.scene .dot:nth-child(366) {
+  background-color: hsl(271.4876033058deg, 50%, 70%);
+}
+.scene .dot:nth-child(367) {
+  background-color: hsl(272.2314049587deg, 50%, 70%);
+}
+.scene .dot:nth-child(368) {
+  background-color: hsl(272.9752066116deg, 50%, 70%);
+}
+.scene .dot:nth-child(369) {
+  background-color: hsl(273.7190082645deg, 50%, 70%);
+}
+.scene .dot:nth-child(370) {
+  background-color: hsl(274.4628099174deg, 50%, 70%);
+}
+.scene .dot:nth-child(371) {
+  background-color: hsl(275.2066115702deg, 50%, 70%);
+}
+.scene .dot:nth-child(372) {
+  background-color: hsl(275.9504132231deg, 50%, 70%);
+}
+.scene .dot:nth-child(373) {
+  background-color: hsl(276.694214876deg, 50%, 70%);
+}
+.scene .dot:nth-child(374) {
+  background-color: hsl(277.4380165289deg, 50%, 70%);
+}
+.scene .dot:nth-child(375) {
+  background-color: hsl(278.1818181818deg, 50%, 70%);
+}
+.scene .dot:nth-child(376) {
+  background-color: hsl(278.9256198347deg, 50%, 70%);
+}
+.scene .dot:nth-child(377) {
+  background-color: hsl(279.6694214876deg, 50%, 70%);
+}
+.scene .dot:nth-child(378) {
+  background-color: hsl(280.4132231405deg, 50%, 70%);
+}
+.scene .dot:nth-child(379) {
+  background-color: hsl(281.1570247934deg, 50%, 70%);
+}
+.scene .dot:nth-child(380) {
+  background-color: hsl(281.9008264463deg, 50%, 70%);
+}
+.scene .dot:nth-child(381) {
+  background-color: hsl(282.6446280992deg, 50%, 70%);
+}
+.scene .dot:nth-child(382) {
+  background-color: hsl(283.3884297521deg, 50%, 70%);
+}
+.scene .dot:nth-child(383) {
+  background-color: hsl(284.132231405deg, 50%, 70%);
+}
+.scene .dot:nth-child(384) {
+  background-color: hsl(284.8760330579deg, 50%, 70%);
+}
+.scene .dot:nth-child(385) {
+  background-color: hsl(285.6198347107deg, 50%, 70%);
+}
+.scene .dot:nth-child(386) {
+  background-color: hsl(286.3636363636deg, 50%, 70%);
+}
+.scene .dot:nth-child(387) {
+  background-color: hsl(287.1074380165deg, 50%, 70%);
+}
+.scene .dot:nth-child(388) {
+  background-color: hsl(287.8512396694deg, 50%, 70%);
+}
+.scene .dot:nth-child(389) {
+  background-color: hsl(288.5950413223deg, 50%, 70%);
+}
+.scene .dot:nth-child(390) {
+  background-color: hsl(289.3388429752deg, 50%, 70%);
+}
+.scene .dot:nth-child(391) {
+  background-color: hsl(290.0826446281deg, 50%, 70%);
+}
+.scene .dot:nth-child(392) {
+  background-color: hsl(290.826446281deg, 50%, 70%);
+}
+.scene .dot:nth-child(393) {
+  background-color: hsl(291.5702479339deg, 50%, 70%);
+}
+.scene .dot:nth-child(394) {
+  background-color: hsl(292.3140495868deg, 50%, 70%);
+}
+.scene .dot:nth-child(395) {
+  background-color: hsl(293.0578512397deg, 50%, 70%);
+}
+.scene .dot:nth-child(396) {
+  background-color: hsl(293.8016528926deg, 50%, 70%);
+}
+.scene .dot:nth-child(397) {
+  background-color: hsl(294.5454545455deg, 50%, 70%);
+}
+.scene .dot:nth-child(398) {
+  background-color: hsl(295.2892561983deg, 50%, 70%);
+}
+.scene .dot:nth-child(399) {
+  background-color: hsl(296.0330578512deg, 50%, 70%);
+}
+.scene .dot:nth-child(400) {
+  background-color: hsl(296.7768595041deg, 50%, 70%);
+}
+.scene .dot:nth-child(401) {
+  background-color: hsl(297.520661157deg, 50%, 70%);
+}
+.scene .dot:nth-child(402) {
+  background-color: hsl(298.2644628099deg, 50%, 70%);
+}
+.scene .dot:nth-child(403) {
+  background-color: hsl(299.0082644628deg, 50%, 70%);
+}
+.scene .dot:nth-child(404) {
+  background-color: hsl(299.7520661157deg, 50%, 70%);
+}
+.scene .dot:nth-child(405) {
+  background-color: hsl(300.4958677686deg, 50%, 70%);
+}
+.scene .dot:nth-child(406) {
+  background-color: hsl(301.2396694215deg, 50%, 70%);
+}
+.scene .dot:nth-child(407) {
+  background-color: hsl(301.9834710744deg, 50%, 70%);
+}
+.scene .dot:nth-child(408) {
+  background-color: hsl(302.7272727273deg, 50%, 70%);
+}
+.scene .dot:nth-child(409) {
+  background-color: hsl(303.4710743802deg, 50%, 70%);
+}
+.scene .dot:nth-child(410) {
+  background-color: hsl(304.2148760331deg, 50%, 70%);
+}
+.scene .dot:nth-child(411) {
+  background-color: hsl(304.958677686deg, 50%, 70%);
+}
+.scene .dot:nth-child(412) {
+  background-color: hsl(305.7024793388deg, 50%, 70%);
+}
+.scene .dot:nth-child(413) {
+  background-color: hsl(306.4462809917deg, 50%, 70%);
+}
+.scene .dot:nth-child(414) {
+  background-color: hsl(307.1900826446deg, 50%, 70%);
+}
+.scene .dot:nth-child(415) {
+  background-color: hsl(307.9338842975deg, 50%, 70%);
+}
+.scene .dot:nth-child(416) {
+  background-color: hsl(308.6776859504deg, 50%, 70%);
+}
+.scene .dot:nth-child(417) {
+  background-color: hsl(309.4214876033deg, 50%, 70%);
+}
+.scene .dot:nth-child(418) {
+  background-color: hsl(310.1652892562deg, 50%, 70%);
+}
+.scene .dot:nth-child(419) {
+  background-color: hsl(310.9090909091deg, 50%, 70%);
+}
+.scene .dot:nth-child(420) {
+  background-color: hsl(311.652892562deg, 50%, 70%);
+}
+.scene .dot:nth-child(421) {
+  background-color: hsl(312.3966942149deg, 50%, 70%);
+}
+.scene .dot:nth-child(422) {
+  background-color: hsl(313.1404958678deg, 50%, 70%);
+}
+.scene .dot:nth-child(423) {
+  background-color: hsl(313.8842975207deg, 50%, 70%);
+}
+.scene .dot:nth-child(424) {
+  background-color: hsl(314.6280991736deg, 50%, 70%);
+}
+.scene .dot:nth-child(425) {
+  background-color: hsl(315.3719008264deg, 50%, 70%);
+}
+.scene .dot:nth-child(426) {
+  background-color: hsl(316.1157024793deg, 50%, 70%);
+}
+.scene .dot:nth-child(427) {
+  background-color: hsl(316.8595041322deg, 50%, 70%);
+}
+.scene .dot:nth-child(428) {
+  background-color: hsl(317.6033057851deg, 50%, 70%);
+}
+.scene .dot:nth-child(429) {
+  background-color: hsl(318.347107438deg, 50%, 70%);
+}
+.scene .dot:nth-child(430) {
+  background-color: hsl(319.0909090909deg, 50%, 70%);
+}
+.scene .dot:nth-child(431) {
+  background-color: hsl(319.8347107438deg, 50%, 70%);
+}
+.scene .dot:nth-child(432) {
+  background-color: hsl(320.5785123967deg, 50%, 70%);
+}
+.scene .dot:nth-child(433) {
+  background-color: hsl(321.3223140496deg, 50%, 70%);
+}
+.scene .dot:nth-child(434) {
+  background-color: hsl(322.0661157025deg, 50%, 70%);
+}
+.scene .dot:nth-child(435) {
+  background-color: hsl(322.8099173554deg, 50%, 70%);
+}
+.scene .dot:nth-child(436) {
+  background-color: hsl(323.5537190083deg, 50%, 70%);
+}
+.scene .dot:nth-child(437) {
+  background-color: hsl(324.2975206612deg, 50%, 70%);
+}
+.scene .dot:nth-child(438) {
+  background-color: hsl(325.041322314deg, 50%, 70%);
+}
+.scene .dot:nth-child(439) {
+  background-color: hsl(325.7851239669deg, 50%, 70%);
+}
+.scene .dot:nth-child(440) {
+  background-color: hsl(326.5289256198deg, 50%, 70%);
+}
+.scene .dot:nth-child(441) {
+  background-color: hsl(327.2727272727deg, 50%, 70%);
+}
+.scene .dot:nth-child(442) {
+  background-color: hsl(328.0165289256deg, 50%, 70%);
+}
+.scene .dot:nth-child(443) {
+  background-color: hsl(328.7603305785deg, 50%, 70%);
+}
+.scene .dot:nth-child(444) {
+  background-color: hsl(329.5041322314deg, 50%, 70%);
+}
+.scene .dot:nth-child(445) {
+  background-color: hsl(330.2479338843deg, 50%, 70%);
+}
+.scene .dot:nth-child(446) {
+  background-color: hsl(330.9917355372deg, 50%, 70%);
+}
+.scene .dot:nth-child(447) {
+  background-color: hsl(331.7355371901deg, 50%, 70%);
+}
+.scene .dot:nth-child(448) {
+  background-color: hsl(332.479338843deg, 50%, 70%);
+}
+.scene .dot:nth-child(449) {
+  background-color: hsl(333.2231404959deg, 50%, 70%);
+}
+.scene .dot:nth-child(450) {
+  background-color: hsl(333.9669421488deg, 50%, 70%);
+}
+.scene .dot:nth-child(451) {
+  background-color: hsl(334.7107438017deg, 50%, 70%);
+}
+.scene .dot:nth-child(452) {
+  background-color: hsl(335.4545454545deg, 50%, 70%);
+}
+.scene .dot:nth-child(453) {
+  background-color: hsl(336.1983471074deg, 50%, 70%);
+}
+.scene .dot:nth-child(454) {
+  background-color: hsl(336.9421487603deg, 50%, 70%);
+}
+.scene .dot:nth-child(455) {
+  background-color: hsl(337.6859504132deg, 50%, 70%);
+}
+.scene .dot:nth-child(456) {
+  background-color: hsl(338.4297520661deg, 50%, 70%);
+}
+.scene .dot:nth-child(457) {
+  background-color: hsl(339.173553719deg, 50%, 70%);
+}
+.scene .dot:nth-child(458) {
+  background-color: hsl(339.9173553719deg, 50%, 70%);
+}
+.scene .dot:nth-child(459) {
+  background-color: hsl(340.6611570248deg, 50%, 70%);
+}
+.scene .dot:nth-child(460) {
+  background-color: hsl(341.4049586777deg, 50%, 70%);
+}
+.scene .dot:nth-child(461) {
+  background-color: hsl(342.1487603306deg, 50%, 70%);
+}
+.scene .dot:nth-child(462) {
+  background-color: hsl(342.8925619835deg, 50%, 70%);
+}
+.scene .dot:nth-child(463) {
+  background-color: hsl(343.6363636364deg, 50%, 70%);
+}
+.scene .dot:nth-child(464) {
+  background-color: hsl(344.3801652893deg, 50%, 70%);
+}
+.scene .dot:nth-child(465) {
+  background-color: hsl(345.1239669421deg, 50%, 70%);
+}
+.scene .dot:nth-child(466) {
+  background-color: hsl(345.867768595deg, 50%, 70%);
+}
+.scene .dot:nth-child(467) {
+  background-color: hsl(346.6115702479deg, 50%, 70%);
+}
+.scene .dot:nth-child(468) {
+  background-color: hsl(347.3553719008deg, 50%, 70%);
+}
+.scene .dot:nth-child(469) {
+  background-color: hsl(348.0991735537deg, 50%, 70%);
+}
+.scene .dot:nth-child(470) {
+  background-color: hsl(348.8429752066deg, 50%, 70%);
+}
+.scene .dot:nth-child(471) {
+  background-color: hsl(349.5867768595deg, 50%, 70%);
+}
+.scene .dot:nth-child(472) {
+  background-color: hsl(350.3305785124deg, 50%, 70%);
+}
+.scene .dot:nth-child(473) {
+  background-color: hsl(351.0743801653deg, 50%, 70%);
+}
+.scene .dot:nth-child(474) {
+  background-color: hsl(351.8181818182deg, 50%, 70%);
+}
+.scene .dot:nth-child(475) {
+  background-color: hsl(352.5619834711deg, 50%, 70%);
+}
+.scene .dot:nth-child(476) {
+  background-color: hsl(353.305785124deg, 50%, 70%);
+}
+.scene .dot:nth-child(477) {
+  background-color: hsl(354.0495867769deg, 50%, 70%);
+}
+.scene .dot:nth-child(478) {
+  background-color: hsl(354.7933884298deg, 50%, 70%);
+}
+.scene .dot:nth-child(479) {
+  background-color: hsl(355.5371900826deg, 50%, 70%);
+}
+.scene .dot:nth-child(480) {
+  background-color: hsl(356.2809917355deg, 50%, 70%);
+}
+.scene .dot:nth-child(481) {
+  background-color: hsl(357.0247933884deg, 50%, 70%);
+}
+.scene .dot:nth-child(482) {
+  background-color: hsl(357.7685950413deg, 50%, 70%);
+}
+.scene .dot:nth-child(483) {
+  background-color: hsl(358.5123966942deg, 50%, 70%);
+}
+.scene .dot:nth-child(484) {
+  background-color: hsl(359.2561983471deg, 50%, 70%);
+}
+.scene .dot:nth-child(485) {
+  background-color: hsl(0deg, 50%, 70%);
+}
+.scene .dot:nth-child(22n+1) {
+  --delay1: 0s;
+}
+.scene .dot:nth-child(n+1) {
+  --delay2: 0s;
+}
+.scene .dot:nth-child(22n+2) {
+  --delay1: -0.3s;
+}
+.scene .dot:nth-child(n+23) {
+  --delay2: -0.2s;
+}
+.scene .dot:nth-child(22n+3) {
+  --delay1: -0.6s;
+}
+.scene .dot:nth-child(n+45) {
+  --delay2: -0.4s;
+}
+.scene .dot:nth-child(22n+4) {
+  --delay1: -0.9s;
+}
+.scene .dot:nth-child(n+67) {
+  --delay2: -0.6s;
+}
+.scene .dot:nth-child(22n+5) {
+  --delay1: -1.2s;
+}
+.scene .dot:nth-child(n+89) {
+  --delay2: -0.8s;
+}
+.scene .dot:nth-child(22n+6) {
+  --delay1: -1.5s;
+}
+.scene .dot:nth-child(n+111) {
+  --delay2: -1s;
+}
+.scene .dot:nth-child(22n+7) {
+  --delay1: -1.8s;
+}
+.scene .dot:nth-child(n+133) {
+  --delay2: -1.2s;
+}
+.scene .dot:nth-child(22n+8) {
+  --delay1: -2.1s;
+}
+.scene .dot:nth-child(n+155) {
+  --delay2: -1.4s;
+}
+.scene .dot:nth-child(22n+9) {
+  --delay1: -2.4s;
+}
+.scene .dot:nth-child(n+177) {
+  --delay2: -1.6s;
+}
+.scene .dot:nth-child(22n+10) {
+  --delay1: -2.7s;
+}
+.scene .dot:nth-child(n+199) {
+  --delay2: -1.8s;
+}
+.scene .dot:nth-child(22n+11) {
+  --delay1: -3s;
+}
+.scene .dot:nth-child(n+221) {
+  --delay2: -2s;
+}
+.scene .dot:nth-child(22n+12) {
+  --delay1: -3.3s;
+}
+.scene .dot:nth-child(n+243) {
+  --delay2: -2.2s;
+}
+.scene .dot:nth-child(22n+13) {
+  --delay1: -3.6s;
+}
+.scene .dot:nth-child(n+265) {
+  --delay2: -2.4s;
+}
+.scene .dot:nth-child(22n+14) {
+  --delay1: -3.9s;
+}
+.scene .dot:nth-child(n+287) {
+  --delay2: -2.6s;
+}
+.scene .dot:nth-child(22n+15) {
+  --delay1: -4.2s;
+}
+.scene .dot:nth-child(n+309) {
+  --delay2: -2.8s;
+}
+.scene .dot:nth-child(22n+16) {
+  --delay1: -4.5s;
+}
+.scene .dot:nth-child(n+331) {
+  --delay2: -3s;
+}
+.scene .dot:nth-child(22n+17) {
+  --delay1: -4.8s;
+}
+.scene .dot:nth-child(n+353) {
+  --delay2: -3.2s;
+}
+.scene .dot:nth-child(22n+18) {
+  --delay1: -5.1s;
+}
+.scene .dot:nth-child(n+375) {
+  --delay2: -3.4s;
+}
+.scene .dot:nth-child(22n+19) {
+  --delay1: -5.4s;
+}
+.scene .dot:nth-child(n+397) {
+  --delay2: -3.6s;
+}
+.scene .dot:nth-child(22n+20) {
+  --delay1: -5.7s;
+}
+.scene .dot:nth-child(n+419) {
+  --delay2: -3.8s;
+}
+.scene .dot:nth-child(22n+21) {
+  --delay1: -6s;
+}
+.scene .dot:nth-child(n+441) {
+  --delay2: -4s;
+}
+.scene .dot:nth-child(22n+22) {
+  --delay1: -6.3s;
+}
+.scene .dot:nth-child(n+463) {
+  --delay2: -4.2s;
+}
+
+@-webkit-keyframes dots {
+  from {
+    transform: rotate(0deg) translateX(24px);
+  }
+  to {
+    transform: rotate(1440deg) translateX(24px);
+  }
+}
+
+@keyframes dots {
+  from {
+    transform: rotate(0deg) translateX(24px);
+  }
+  to {
+    transform: rotate(1440deg) translateX(24px);
+  }
+}/*# sourceMappingURL=style.css.map */

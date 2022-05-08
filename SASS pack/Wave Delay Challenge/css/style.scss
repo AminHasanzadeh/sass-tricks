@@ -1,0 +1,84 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+//change xdelay and ydelay for more results. if you equal this two value you can see a neat wave flag
+$xdelay: 0.3;
+$ydelay: 0.2;
+$dotsize: 12px;
+$gridsize: 24px;
+$number: 484;
+body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scene {
+    display: grid;
+    grid-template-columns: repeat(22, $gridsize);
+    grid-template-rows: repeat(22, $gridsize);
+    margin-top: 50px;
+    .dot {
+        width: $dotsize;
+        height: $dotsize;
+        border-radius: 50%;
+        animation: dots 30s ease-in-out calc(var(--delay1) + var(--delay2)) infinite;
+        //this is color maker for trick
+        @for $i from 0 through $number {
+            &:nth-child(#{$i + 1}) {
+                background-color: hsl(360 / $number * $i, 50%, 70%);
+            }
+        }
+        //for loop is rows and columns count.
+        @for $i from 0 to 22 {
+            &:nth-child(22n + #{$i + 1}) { //this nth-child is for rows . each rows that made by a formula works with (n) value
+              --delay1: #{$i * $xdelay * -1s};
+            }
+            &:nth-child(n + #{(22 * $i) + 1}) { 
+                //this is for columns (n + #{(22 * $i) + 1}) works also with n sequence 
+              --delay2: #{$i * $ydelay * -1s};
+            }
+            //then this two delay value will add together for make a delay . 
+            //this formula counts each dots in its x axis and y axis , calculate their delays then put it into animation
+            //the first 3 to n sequense of this formula :
+            //X axis : first rows
+            // 1)0 * 1 +{0 + 1} = 1
+            // 2)0 * 1 +{1 + 1} = 2
+            // 3)0 * 1 +{2 + 1} = 3
+            //         . . .
+            // last)0 * 1 +{22 + 1} = 23
+            // second rows
+            // 1)22 * 1 +{0 + 1} = 23
+            // 2)22 * 1 +{1 + 1} = 24
+            // 3)22 * 1 +{2 + 1} = 25
+            //         . . .
+            // last)22 * 1 +{22 + 1} = 45
+
+            //Y axis : first columns
+            // 1)0 + #{(22 * 0) + 1 = 1
+            // 2)0 + #{(22 * 1) + 1 = 23
+            // 3)0 + #{(22 * 2) + 1 = 45
+            //         . . .
+            // last)0 + #{(22 * 22) + 1 = 145
+
+            //Y axis : second columns
+            // 1)1 + #{(22 * 0) + 1 = 2
+            // 2)1 + #{(22 * 1) + 1 = 24
+            // 3)1 + #{(22 * 2) + 1 = 46
+            //         . . .
+            // last)1 + #{(22 * 22) + 1 = 146
+        }
+    }
+}
+//animation of the trick . the rotating in their position then translating x . so yes . this is 2D but you see that 3d
+//cause this rotating .
+@keyframes dots {
+    from {
+        transform: rotate(0deg) translateX($gridsize);
+    }
+    to {
+        transform: rotate(1440deg) translateX($gridsize);
+    }
+}

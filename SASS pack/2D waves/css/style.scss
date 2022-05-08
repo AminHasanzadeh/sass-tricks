@@ -1,0 +1,40 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+}
+.scene {
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    position: relative;
+}
+.box {
+    margin-top: 100px;
+    width: 2%;
+    height: 200px;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    display: block;
+    animation: animate 4s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate;
+    // for transition style preffered cubic-bezier(0.77, 0, 0.175, 1) nice animations
+
+    //left: (-1% + (1% * $i)); this code is for put elements next to each other from left to right 
+    @for $i from 1 through 100 {
+        &:nth-child(#{$i}) {
+            left: (-1% + (1% * $i));
+            background: hsla((360 / 100) * $i, 50%, 50%, 0.6);
+            animation-delay: -($i * 0.1s);
+        }
+    }
+}
+//main animation of this trick used random for sign a random value for translates then multiplied in 1px for take rsult as px
+@keyframes animate {
+    100% {
+        transform: translate(random(500) * 1px, random(500) * 1px);
+    }
+}

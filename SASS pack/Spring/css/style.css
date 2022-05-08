@@ -1,0 +1,1068 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  perspective: 900px;
+  overflow: hidden;
+}
+
+.scene {
+  width: 100%;
+  height: 100vmin;
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: rotating 37.5s linear infinite;
+          animation: rotating 37.5s linear infinite;
+}
+.scene .ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-animation: spring 150s linear infinite;
+          animation: spring 150s linear infinite;
+}
+.scene .ball:nth-child(1) {
+  background-color: hsl(1.8deg, 50%, 70%);
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
+}
+.scene .ball:nth-child(2) {
+  background-color: hsl(3.6deg, 50%, 70%);
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+}
+.scene .ball:nth-child(3) {
+  background-color: hsl(5.4deg, 50%, 70%);
+  -webkit-animation-delay: -2.25s;
+          animation-delay: -2.25s;
+}
+.scene .ball:nth-child(4) {
+  background-color: hsl(7.2deg, 50%, 70%);
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+}
+.scene .ball:nth-child(5) {
+  background-color: hsl(9deg, 50%, 70%);
+  -webkit-animation-delay: -3.75s;
+          animation-delay: -3.75s;
+}
+.scene .ball:nth-child(6) {
+  background-color: hsl(10.8deg, 50%, 70%);
+  -webkit-animation-delay: -4.5s;
+          animation-delay: -4.5s;
+}
+.scene .ball:nth-child(7) {
+  background-color: hsl(12.6deg, 50%, 70%);
+  -webkit-animation-delay: -5.25s;
+          animation-delay: -5.25s;
+}
+.scene .ball:nth-child(8) {
+  background-color: hsl(14.4deg, 50%, 70%);
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+.scene .ball:nth-child(9) {
+  background-color: hsl(16.2deg, 50%, 70%);
+  -webkit-animation-delay: -6.75s;
+          animation-delay: -6.75s;
+}
+.scene .ball:nth-child(10) {
+  background-color: hsl(18deg, 50%, 70%);
+  -webkit-animation-delay: -7.5s;
+          animation-delay: -7.5s;
+}
+.scene .ball:nth-child(11) {
+  background-color: hsl(19.8deg, 50%, 70%);
+  -webkit-animation-delay: -8.25s;
+          animation-delay: -8.25s;
+}
+.scene .ball:nth-child(12) {
+  background-color: hsl(21.6deg, 50%, 70%);
+  -webkit-animation-delay: -9s;
+          animation-delay: -9s;
+}
+.scene .ball:nth-child(13) {
+  background-color: hsl(23.4deg, 50%, 70%);
+  -webkit-animation-delay: -9.75s;
+          animation-delay: -9.75s;
+}
+.scene .ball:nth-child(14) {
+  background-color: hsl(25.2deg, 50%, 70%);
+  -webkit-animation-delay: -10.5s;
+          animation-delay: -10.5s;
+}
+.scene .ball:nth-child(15) {
+  background-color: hsl(27deg, 50%, 70%);
+  -webkit-animation-delay: -11.25s;
+          animation-delay: -11.25s;
+}
+.scene .ball:nth-child(16) {
+  background-color: hsl(28.8deg, 50%, 70%);
+  -webkit-animation-delay: -12s;
+          animation-delay: -12s;
+}
+.scene .ball:nth-child(17) {
+  background-color: hsl(30.6deg, 50%, 70%);
+  -webkit-animation-delay: -12.75s;
+          animation-delay: -12.75s;
+}
+.scene .ball:nth-child(18) {
+  background-color: hsl(32.4deg, 50%, 70%);
+  -webkit-animation-delay: -13.5s;
+          animation-delay: -13.5s;
+}
+.scene .ball:nth-child(19) {
+  background-color: hsl(34.2deg, 50%, 70%);
+  -webkit-animation-delay: -14.25s;
+          animation-delay: -14.25s;
+}
+.scene .ball:nth-child(20) {
+  background-color: hsl(36deg, 50%, 70%);
+  -webkit-animation-delay: -15s;
+          animation-delay: -15s;
+}
+.scene .ball:nth-child(21) {
+  background-color: hsl(37.8deg, 50%, 70%);
+  -webkit-animation-delay: -15.75s;
+          animation-delay: -15.75s;
+}
+.scene .ball:nth-child(22) {
+  background-color: hsl(39.6deg, 50%, 70%);
+  -webkit-animation-delay: -16.5s;
+          animation-delay: -16.5s;
+}
+.scene .ball:nth-child(23) {
+  background-color: hsl(41.4deg, 50%, 70%);
+  -webkit-animation-delay: -17.25s;
+          animation-delay: -17.25s;
+}
+.scene .ball:nth-child(24) {
+  background-color: hsl(43.2deg, 50%, 70%);
+  -webkit-animation-delay: -18s;
+          animation-delay: -18s;
+}
+.scene .ball:nth-child(25) {
+  background-color: hsl(45deg, 50%, 70%);
+  -webkit-animation-delay: -18.75s;
+          animation-delay: -18.75s;
+}
+.scene .ball:nth-child(26) {
+  background-color: hsl(46.8deg, 50%, 70%);
+  -webkit-animation-delay: -19.5s;
+          animation-delay: -19.5s;
+}
+.scene .ball:nth-child(27) {
+  background-color: hsl(48.6deg, 50%, 70%);
+  -webkit-animation-delay: -20.25s;
+          animation-delay: -20.25s;
+}
+.scene .ball:nth-child(28) {
+  background-color: hsl(50.4deg, 50%, 70%);
+  -webkit-animation-delay: -21s;
+          animation-delay: -21s;
+}
+.scene .ball:nth-child(29) {
+  background-color: hsl(52.2deg, 50%, 70%);
+  -webkit-animation-delay: -21.75s;
+          animation-delay: -21.75s;
+}
+.scene .ball:nth-child(30) {
+  background-color: hsl(54deg, 50%, 70%);
+  -webkit-animation-delay: -22.5s;
+          animation-delay: -22.5s;
+}
+.scene .ball:nth-child(31) {
+  background-color: hsl(55.8deg, 50%, 70%);
+  -webkit-animation-delay: -23.25s;
+          animation-delay: -23.25s;
+}
+.scene .ball:nth-child(32) {
+  background-color: hsl(57.6deg, 50%, 70%);
+  -webkit-animation-delay: -24s;
+          animation-delay: -24s;
+}
+.scene .ball:nth-child(33) {
+  background-color: hsl(59.4deg, 50%, 70%);
+  -webkit-animation-delay: -24.75s;
+          animation-delay: -24.75s;
+}
+.scene .ball:nth-child(34) {
+  background-color: hsl(61.2deg, 50%, 70%);
+  -webkit-animation-delay: -25.5s;
+          animation-delay: -25.5s;
+}
+.scene .ball:nth-child(35) {
+  background-color: hsl(63deg, 50%, 70%);
+  -webkit-animation-delay: -26.25s;
+          animation-delay: -26.25s;
+}
+.scene .ball:nth-child(36) {
+  background-color: hsl(64.8deg, 50%, 70%);
+  -webkit-animation-delay: -27s;
+          animation-delay: -27s;
+}
+.scene .ball:nth-child(37) {
+  background-color: hsl(66.6deg, 50%, 70%);
+  -webkit-animation-delay: -27.75s;
+          animation-delay: -27.75s;
+}
+.scene .ball:nth-child(38) {
+  background-color: hsl(68.4deg, 50%, 70%);
+  -webkit-animation-delay: -28.5s;
+          animation-delay: -28.5s;
+}
+.scene .ball:nth-child(39) {
+  background-color: hsl(70.2deg, 50%, 70%);
+  -webkit-animation-delay: -29.25s;
+          animation-delay: -29.25s;
+}
+.scene .ball:nth-child(40) {
+  background-color: hsl(72deg, 50%, 70%);
+  -webkit-animation-delay: -30s;
+          animation-delay: -30s;
+}
+.scene .ball:nth-child(41) {
+  background-color: hsl(73.8deg, 50%, 70%);
+  -webkit-animation-delay: -30.75s;
+          animation-delay: -30.75s;
+}
+.scene .ball:nth-child(42) {
+  background-color: hsl(75.6deg, 50%, 70%);
+  -webkit-animation-delay: -31.5s;
+          animation-delay: -31.5s;
+}
+.scene .ball:nth-child(43) {
+  background-color: hsl(77.4deg, 50%, 70%);
+  -webkit-animation-delay: -32.25s;
+          animation-delay: -32.25s;
+}
+.scene .ball:nth-child(44) {
+  background-color: hsl(79.2deg, 50%, 70%);
+  -webkit-animation-delay: -33s;
+          animation-delay: -33s;
+}
+.scene .ball:nth-child(45) {
+  background-color: hsl(81deg, 50%, 70%);
+  -webkit-animation-delay: -33.75s;
+          animation-delay: -33.75s;
+}
+.scene .ball:nth-child(46) {
+  background-color: hsl(82.8deg, 50%, 70%);
+  -webkit-animation-delay: -34.5s;
+          animation-delay: -34.5s;
+}
+.scene .ball:nth-child(47) {
+  background-color: hsl(84.6deg, 50%, 70%);
+  -webkit-animation-delay: -35.25s;
+          animation-delay: -35.25s;
+}
+.scene .ball:nth-child(48) {
+  background-color: hsl(86.4deg, 50%, 70%);
+  -webkit-animation-delay: -36s;
+          animation-delay: -36s;
+}
+.scene .ball:nth-child(49) {
+  background-color: hsl(88.2deg, 50%, 70%);
+  -webkit-animation-delay: -36.75s;
+          animation-delay: -36.75s;
+}
+.scene .ball:nth-child(50) {
+  background-color: hsl(90deg, 50%, 70%);
+  -webkit-animation-delay: -37.5s;
+          animation-delay: -37.5s;
+}
+.scene .ball:nth-child(51) {
+  background-color: hsl(91.8deg, 50%, 70%);
+  -webkit-animation-delay: -38.25s;
+          animation-delay: -38.25s;
+}
+.scene .ball:nth-child(52) {
+  background-color: hsl(93.6deg, 50%, 70%);
+  -webkit-animation-delay: -39s;
+          animation-delay: -39s;
+}
+.scene .ball:nth-child(53) {
+  background-color: hsl(95.4deg, 50%, 70%);
+  -webkit-animation-delay: -39.75s;
+          animation-delay: -39.75s;
+}
+.scene .ball:nth-child(54) {
+  background-color: hsl(97.2deg, 50%, 70%);
+  -webkit-animation-delay: -40.5s;
+          animation-delay: -40.5s;
+}
+.scene .ball:nth-child(55) {
+  background-color: hsl(99deg, 50%, 70%);
+  -webkit-animation-delay: -41.25s;
+          animation-delay: -41.25s;
+}
+.scene .ball:nth-child(56) {
+  background-color: hsl(100.8deg, 50%, 70%);
+  -webkit-animation-delay: -42s;
+          animation-delay: -42s;
+}
+.scene .ball:nth-child(57) {
+  background-color: hsl(102.6deg, 50%, 70%);
+  -webkit-animation-delay: -42.75s;
+          animation-delay: -42.75s;
+}
+.scene .ball:nth-child(58) {
+  background-color: hsl(104.4deg, 50%, 70%);
+  -webkit-animation-delay: -43.5s;
+          animation-delay: -43.5s;
+}
+.scene .ball:nth-child(59) {
+  background-color: hsl(106.2deg, 50%, 70%);
+  -webkit-animation-delay: -44.25s;
+          animation-delay: -44.25s;
+}
+.scene .ball:nth-child(60) {
+  background-color: hsl(108deg, 50%, 70%);
+  -webkit-animation-delay: -45s;
+          animation-delay: -45s;
+}
+.scene .ball:nth-child(61) {
+  background-color: hsl(109.8deg, 50%, 70%);
+  -webkit-animation-delay: -45.75s;
+          animation-delay: -45.75s;
+}
+.scene .ball:nth-child(62) {
+  background-color: hsl(111.6deg, 50%, 70%);
+  -webkit-animation-delay: -46.5s;
+          animation-delay: -46.5s;
+}
+.scene .ball:nth-child(63) {
+  background-color: hsl(113.4deg, 50%, 70%);
+  -webkit-animation-delay: -47.25s;
+          animation-delay: -47.25s;
+}
+.scene .ball:nth-child(64) {
+  background-color: hsl(115.2deg, 50%, 70%);
+  -webkit-animation-delay: -48s;
+          animation-delay: -48s;
+}
+.scene .ball:nth-child(65) {
+  background-color: hsl(117deg, 50%, 70%);
+  -webkit-animation-delay: -48.75s;
+          animation-delay: -48.75s;
+}
+.scene .ball:nth-child(66) {
+  background-color: hsl(118.8deg, 50%, 70%);
+  -webkit-animation-delay: -49.5s;
+          animation-delay: -49.5s;
+}
+.scene .ball:nth-child(67) {
+  background-color: hsl(120.6deg, 50%, 70%);
+  -webkit-animation-delay: -50.25s;
+          animation-delay: -50.25s;
+}
+.scene .ball:nth-child(68) {
+  background-color: hsl(122.4deg, 50%, 70%);
+  -webkit-animation-delay: -51s;
+          animation-delay: -51s;
+}
+.scene .ball:nth-child(69) {
+  background-color: hsl(124.2deg, 50%, 70%);
+  -webkit-animation-delay: -51.75s;
+          animation-delay: -51.75s;
+}
+.scene .ball:nth-child(70) {
+  background-color: hsl(126deg, 50%, 70%);
+  -webkit-animation-delay: -52.5s;
+          animation-delay: -52.5s;
+}
+.scene .ball:nth-child(71) {
+  background-color: hsl(127.8deg, 50%, 70%);
+  -webkit-animation-delay: -53.25s;
+          animation-delay: -53.25s;
+}
+.scene .ball:nth-child(72) {
+  background-color: hsl(129.6deg, 50%, 70%);
+  -webkit-animation-delay: -54s;
+          animation-delay: -54s;
+}
+.scene .ball:nth-child(73) {
+  background-color: hsl(131.4deg, 50%, 70%);
+  -webkit-animation-delay: -54.75s;
+          animation-delay: -54.75s;
+}
+.scene .ball:nth-child(74) {
+  background-color: hsl(133.2deg, 50%, 70%);
+  -webkit-animation-delay: -55.5s;
+          animation-delay: -55.5s;
+}
+.scene .ball:nth-child(75) {
+  background-color: hsl(135deg, 50%, 70%);
+  -webkit-animation-delay: -56.25s;
+          animation-delay: -56.25s;
+}
+.scene .ball:nth-child(76) {
+  background-color: hsl(136.8deg, 50%, 70%);
+  -webkit-animation-delay: -57s;
+          animation-delay: -57s;
+}
+.scene .ball:nth-child(77) {
+  background-color: hsl(138.6deg, 50%, 70%);
+  -webkit-animation-delay: -57.75s;
+          animation-delay: -57.75s;
+}
+.scene .ball:nth-child(78) {
+  background-color: hsl(140.4deg, 50%, 70%);
+  -webkit-animation-delay: -58.5s;
+          animation-delay: -58.5s;
+}
+.scene .ball:nth-child(79) {
+  background-color: hsl(142.2deg, 50%, 70%);
+  -webkit-animation-delay: -59.25s;
+          animation-delay: -59.25s;
+}
+.scene .ball:nth-child(80) {
+  background-color: hsl(144deg, 50%, 70%);
+  -webkit-animation-delay: -60s;
+          animation-delay: -60s;
+}
+.scene .ball:nth-child(81) {
+  background-color: hsl(145.8deg, 50%, 70%);
+  -webkit-animation-delay: -60.75s;
+          animation-delay: -60.75s;
+}
+.scene .ball:nth-child(82) {
+  background-color: hsl(147.6deg, 50%, 70%);
+  -webkit-animation-delay: -61.5s;
+          animation-delay: -61.5s;
+}
+.scene .ball:nth-child(83) {
+  background-color: hsl(149.4deg, 50%, 70%);
+  -webkit-animation-delay: -62.25s;
+          animation-delay: -62.25s;
+}
+.scene .ball:nth-child(84) {
+  background-color: hsl(151.2deg, 50%, 70%);
+  -webkit-animation-delay: -63s;
+          animation-delay: -63s;
+}
+.scene .ball:nth-child(85) {
+  background-color: hsl(153deg, 50%, 70%);
+  -webkit-animation-delay: -63.75s;
+          animation-delay: -63.75s;
+}
+.scene .ball:nth-child(86) {
+  background-color: hsl(154.8deg, 50%, 70%);
+  -webkit-animation-delay: -64.5s;
+          animation-delay: -64.5s;
+}
+.scene .ball:nth-child(87) {
+  background-color: hsl(156.6deg, 50%, 70%);
+  -webkit-animation-delay: -65.25s;
+          animation-delay: -65.25s;
+}
+.scene .ball:nth-child(88) {
+  background-color: hsl(158.4deg, 50%, 70%);
+  -webkit-animation-delay: -66s;
+          animation-delay: -66s;
+}
+.scene .ball:nth-child(89) {
+  background-color: hsl(160.2deg, 50%, 70%);
+  -webkit-animation-delay: -66.75s;
+          animation-delay: -66.75s;
+}
+.scene .ball:nth-child(90) {
+  background-color: hsl(162deg, 50%, 70%);
+  -webkit-animation-delay: -67.5s;
+          animation-delay: -67.5s;
+}
+.scene .ball:nth-child(91) {
+  background-color: hsl(163.8deg, 50%, 70%);
+  -webkit-animation-delay: -68.25s;
+          animation-delay: -68.25s;
+}
+.scene .ball:nth-child(92) {
+  background-color: hsl(165.6deg, 50%, 70%);
+  -webkit-animation-delay: -69s;
+          animation-delay: -69s;
+}
+.scene .ball:nth-child(93) {
+  background-color: hsl(167.4deg, 50%, 70%);
+  -webkit-animation-delay: -69.75s;
+          animation-delay: -69.75s;
+}
+.scene .ball:nth-child(94) {
+  background-color: hsl(169.2deg, 50%, 70%);
+  -webkit-animation-delay: -70.5s;
+          animation-delay: -70.5s;
+}
+.scene .ball:nth-child(95) {
+  background-color: hsl(171deg, 50%, 70%);
+  -webkit-animation-delay: -71.25s;
+          animation-delay: -71.25s;
+}
+.scene .ball:nth-child(96) {
+  background-color: hsl(172.8deg, 50%, 70%);
+  -webkit-animation-delay: -72s;
+          animation-delay: -72s;
+}
+.scene .ball:nth-child(97) {
+  background-color: hsl(174.6deg, 50%, 70%);
+  -webkit-animation-delay: -72.75s;
+          animation-delay: -72.75s;
+}
+.scene .ball:nth-child(98) {
+  background-color: hsl(176.4deg, 50%, 70%);
+  -webkit-animation-delay: -73.5s;
+          animation-delay: -73.5s;
+}
+.scene .ball:nth-child(99) {
+  background-color: hsl(178.2deg, 50%, 70%);
+  -webkit-animation-delay: -74.25s;
+          animation-delay: -74.25s;
+}
+.scene .ball:nth-child(100) {
+  background-color: hsl(180deg, 50%, 70%);
+  -webkit-animation-delay: -75s;
+          animation-delay: -75s;
+}
+.scene .ball:nth-child(101) {
+  background-color: hsl(181.8deg, 50%, 70%);
+  -webkit-animation-delay: -75.75s;
+          animation-delay: -75.75s;
+}
+.scene .ball:nth-child(102) {
+  background-color: hsl(183.6deg, 50%, 70%);
+  -webkit-animation-delay: -76.5s;
+          animation-delay: -76.5s;
+}
+.scene .ball:nth-child(103) {
+  background-color: hsl(185.4deg, 50%, 70%);
+  -webkit-animation-delay: -77.25s;
+          animation-delay: -77.25s;
+}
+.scene .ball:nth-child(104) {
+  background-color: hsl(187.2deg, 50%, 70%);
+  -webkit-animation-delay: -78s;
+          animation-delay: -78s;
+}
+.scene .ball:nth-child(105) {
+  background-color: hsl(189deg, 50%, 70%);
+  -webkit-animation-delay: -78.75s;
+          animation-delay: -78.75s;
+}
+.scene .ball:nth-child(106) {
+  background-color: hsl(190.8deg, 50%, 70%);
+  -webkit-animation-delay: -79.5s;
+          animation-delay: -79.5s;
+}
+.scene .ball:nth-child(107) {
+  background-color: hsl(192.6deg, 50%, 70%);
+  -webkit-animation-delay: -80.25s;
+          animation-delay: -80.25s;
+}
+.scene .ball:nth-child(108) {
+  background-color: hsl(194.4deg, 50%, 70%);
+  -webkit-animation-delay: -81s;
+          animation-delay: -81s;
+}
+.scene .ball:nth-child(109) {
+  background-color: hsl(196.2deg, 50%, 70%);
+  -webkit-animation-delay: -81.75s;
+          animation-delay: -81.75s;
+}
+.scene .ball:nth-child(110) {
+  background-color: hsl(198deg, 50%, 70%);
+  -webkit-animation-delay: -82.5s;
+          animation-delay: -82.5s;
+}
+.scene .ball:nth-child(111) {
+  background-color: hsl(199.8deg, 50%, 70%);
+  -webkit-animation-delay: -83.25s;
+          animation-delay: -83.25s;
+}
+.scene .ball:nth-child(112) {
+  background-color: hsl(201.6deg, 50%, 70%);
+  -webkit-animation-delay: -84s;
+          animation-delay: -84s;
+}
+.scene .ball:nth-child(113) {
+  background-color: hsl(203.4deg, 50%, 70%);
+  -webkit-animation-delay: -84.75s;
+          animation-delay: -84.75s;
+}
+.scene .ball:nth-child(114) {
+  background-color: hsl(205.2deg, 50%, 70%);
+  -webkit-animation-delay: -85.5s;
+          animation-delay: -85.5s;
+}
+.scene .ball:nth-child(115) {
+  background-color: hsl(207deg, 50%, 70%);
+  -webkit-animation-delay: -86.25s;
+          animation-delay: -86.25s;
+}
+.scene .ball:nth-child(116) {
+  background-color: hsl(208.8deg, 50%, 70%);
+  -webkit-animation-delay: -87s;
+          animation-delay: -87s;
+}
+.scene .ball:nth-child(117) {
+  background-color: hsl(210.6deg, 50%, 70%);
+  -webkit-animation-delay: -87.75s;
+          animation-delay: -87.75s;
+}
+.scene .ball:nth-child(118) {
+  background-color: hsl(212.4deg, 50%, 70%);
+  -webkit-animation-delay: -88.5s;
+          animation-delay: -88.5s;
+}
+.scene .ball:nth-child(119) {
+  background-color: hsl(214.2deg, 50%, 70%);
+  -webkit-animation-delay: -89.25s;
+          animation-delay: -89.25s;
+}
+.scene .ball:nth-child(120) {
+  background-color: hsl(216deg, 50%, 70%);
+  -webkit-animation-delay: -90s;
+          animation-delay: -90s;
+}
+.scene .ball:nth-child(121) {
+  background-color: hsl(217.8deg, 50%, 70%);
+  -webkit-animation-delay: -90.75s;
+          animation-delay: -90.75s;
+}
+.scene .ball:nth-child(122) {
+  background-color: hsl(219.6deg, 50%, 70%);
+  -webkit-animation-delay: -91.5s;
+          animation-delay: -91.5s;
+}
+.scene .ball:nth-child(123) {
+  background-color: hsl(221.4deg, 50%, 70%);
+  -webkit-animation-delay: -92.25s;
+          animation-delay: -92.25s;
+}
+.scene .ball:nth-child(124) {
+  background-color: hsl(223.2deg, 50%, 70%);
+  -webkit-animation-delay: -93s;
+          animation-delay: -93s;
+}
+.scene .ball:nth-child(125) {
+  background-color: hsl(225deg, 50%, 70%);
+  -webkit-animation-delay: -93.75s;
+          animation-delay: -93.75s;
+}
+.scene .ball:nth-child(126) {
+  background-color: hsl(226.8deg, 50%, 70%);
+  -webkit-animation-delay: -94.5s;
+          animation-delay: -94.5s;
+}
+.scene .ball:nth-child(127) {
+  background-color: hsl(228.6deg, 50%, 70%);
+  -webkit-animation-delay: -95.25s;
+          animation-delay: -95.25s;
+}
+.scene .ball:nth-child(128) {
+  background-color: hsl(230.4deg, 50%, 70%);
+  -webkit-animation-delay: -96s;
+          animation-delay: -96s;
+}
+.scene .ball:nth-child(129) {
+  background-color: hsl(232.2deg, 50%, 70%);
+  -webkit-animation-delay: -96.75s;
+          animation-delay: -96.75s;
+}
+.scene .ball:nth-child(130) {
+  background-color: hsl(234deg, 50%, 70%);
+  -webkit-animation-delay: -97.5s;
+          animation-delay: -97.5s;
+}
+.scene .ball:nth-child(131) {
+  background-color: hsl(235.8deg, 50%, 70%);
+  -webkit-animation-delay: -98.25s;
+          animation-delay: -98.25s;
+}
+.scene .ball:nth-child(132) {
+  background-color: hsl(237.6deg, 50%, 70%);
+  -webkit-animation-delay: -99s;
+          animation-delay: -99s;
+}
+.scene .ball:nth-child(133) {
+  background-color: hsl(239.4deg, 50%, 70%);
+  -webkit-animation-delay: -99.75s;
+          animation-delay: -99.75s;
+}
+.scene .ball:nth-child(134) {
+  background-color: hsl(241.2deg, 50%, 70%);
+  -webkit-animation-delay: -100.5s;
+          animation-delay: -100.5s;
+}
+.scene .ball:nth-child(135) {
+  background-color: hsl(243deg, 50%, 70%);
+  -webkit-animation-delay: -101.25s;
+          animation-delay: -101.25s;
+}
+.scene .ball:nth-child(136) {
+  background-color: hsl(244.8deg, 50%, 70%);
+  -webkit-animation-delay: -102s;
+          animation-delay: -102s;
+}
+.scene .ball:nth-child(137) {
+  background-color: hsl(246.6deg, 50%, 70%);
+  -webkit-animation-delay: -102.75s;
+          animation-delay: -102.75s;
+}
+.scene .ball:nth-child(138) {
+  background-color: hsl(248.4deg, 50%, 70%);
+  -webkit-animation-delay: -103.5s;
+          animation-delay: -103.5s;
+}
+.scene .ball:nth-child(139) {
+  background-color: hsl(250.2deg, 50%, 70%);
+  -webkit-animation-delay: -104.25s;
+          animation-delay: -104.25s;
+}
+.scene .ball:nth-child(140) {
+  background-color: hsl(252deg, 50%, 70%);
+  -webkit-animation-delay: -105s;
+          animation-delay: -105s;
+}
+.scene .ball:nth-child(141) {
+  background-color: hsl(253.8deg, 50%, 70%);
+  -webkit-animation-delay: -105.75s;
+          animation-delay: -105.75s;
+}
+.scene .ball:nth-child(142) {
+  background-color: hsl(255.6deg, 50%, 70%);
+  -webkit-animation-delay: -106.5s;
+          animation-delay: -106.5s;
+}
+.scene .ball:nth-child(143) {
+  background-color: hsl(257.4deg, 50%, 70%);
+  -webkit-animation-delay: -107.25s;
+          animation-delay: -107.25s;
+}
+.scene .ball:nth-child(144) {
+  background-color: hsl(259.2deg, 50%, 70%);
+  -webkit-animation-delay: -108s;
+          animation-delay: -108s;
+}
+.scene .ball:nth-child(145) {
+  background-color: hsl(261deg, 50%, 70%);
+  -webkit-animation-delay: -108.75s;
+          animation-delay: -108.75s;
+}
+.scene .ball:nth-child(146) {
+  background-color: hsl(262.8deg, 50%, 70%);
+  -webkit-animation-delay: -109.5s;
+          animation-delay: -109.5s;
+}
+.scene .ball:nth-child(147) {
+  background-color: hsl(264.6deg, 50%, 70%);
+  -webkit-animation-delay: -110.25s;
+          animation-delay: -110.25s;
+}
+.scene .ball:nth-child(148) {
+  background-color: hsl(266.4deg, 50%, 70%);
+  -webkit-animation-delay: -111s;
+          animation-delay: -111s;
+}
+.scene .ball:nth-child(149) {
+  background-color: hsl(268.2deg, 50%, 70%);
+  -webkit-animation-delay: -111.75s;
+          animation-delay: -111.75s;
+}
+.scene .ball:nth-child(150) {
+  background-color: hsl(270deg, 50%, 70%);
+  -webkit-animation-delay: -112.5s;
+          animation-delay: -112.5s;
+}
+.scene .ball:nth-child(151) {
+  background-color: hsl(271.8deg, 50%, 70%);
+  -webkit-animation-delay: -113.25s;
+          animation-delay: -113.25s;
+}
+.scene .ball:nth-child(152) {
+  background-color: hsl(273.6deg, 50%, 70%);
+  -webkit-animation-delay: -114s;
+          animation-delay: -114s;
+}
+.scene .ball:nth-child(153) {
+  background-color: hsl(275.4deg, 50%, 70%);
+  -webkit-animation-delay: -114.75s;
+          animation-delay: -114.75s;
+}
+.scene .ball:nth-child(154) {
+  background-color: hsl(277.2deg, 50%, 70%);
+  -webkit-animation-delay: -115.5s;
+          animation-delay: -115.5s;
+}
+.scene .ball:nth-child(155) {
+  background-color: hsl(279deg, 50%, 70%);
+  -webkit-animation-delay: -116.25s;
+          animation-delay: -116.25s;
+}
+.scene .ball:nth-child(156) {
+  background-color: hsl(280.8deg, 50%, 70%);
+  -webkit-animation-delay: -117s;
+          animation-delay: -117s;
+}
+.scene .ball:nth-child(157) {
+  background-color: hsl(282.6deg, 50%, 70%);
+  -webkit-animation-delay: -117.75s;
+          animation-delay: -117.75s;
+}
+.scene .ball:nth-child(158) {
+  background-color: hsl(284.4deg, 50%, 70%);
+  -webkit-animation-delay: -118.5s;
+          animation-delay: -118.5s;
+}
+.scene .ball:nth-child(159) {
+  background-color: hsl(286.2deg, 50%, 70%);
+  -webkit-animation-delay: -119.25s;
+          animation-delay: -119.25s;
+}
+.scene .ball:nth-child(160) {
+  background-color: hsl(288deg, 50%, 70%);
+  -webkit-animation-delay: -120s;
+          animation-delay: -120s;
+}
+.scene .ball:nth-child(161) {
+  background-color: hsl(289.8deg, 50%, 70%);
+  -webkit-animation-delay: -120.75s;
+          animation-delay: -120.75s;
+}
+.scene .ball:nth-child(162) {
+  background-color: hsl(291.6deg, 50%, 70%);
+  -webkit-animation-delay: -121.5s;
+          animation-delay: -121.5s;
+}
+.scene .ball:nth-child(163) {
+  background-color: hsl(293.4deg, 50%, 70%);
+  -webkit-animation-delay: -122.25s;
+          animation-delay: -122.25s;
+}
+.scene .ball:nth-child(164) {
+  background-color: hsl(295.2deg, 50%, 70%);
+  -webkit-animation-delay: -123s;
+          animation-delay: -123s;
+}
+.scene .ball:nth-child(165) {
+  background-color: hsl(297deg, 50%, 70%);
+  -webkit-animation-delay: -123.75s;
+          animation-delay: -123.75s;
+}
+.scene .ball:nth-child(166) {
+  background-color: hsl(298.8deg, 50%, 70%);
+  -webkit-animation-delay: -124.5s;
+          animation-delay: -124.5s;
+}
+.scene .ball:nth-child(167) {
+  background-color: hsl(300.6deg, 50%, 70%);
+  -webkit-animation-delay: -125.25s;
+          animation-delay: -125.25s;
+}
+.scene .ball:nth-child(168) {
+  background-color: hsl(302.4deg, 50%, 70%);
+  -webkit-animation-delay: -126s;
+          animation-delay: -126s;
+}
+.scene .ball:nth-child(169) {
+  background-color: hsl(304.2deg, 50%, 70%);
+  -webkit-animation-delay: -126.75s;
+          animation-delay: -126.75s;
+}
+.scene .ball:nth-child(170) {
+  background-color: hsl(306deg, 50%, 70%);
+  -webkit-animation-delay: -127.5s;
+          animation-delay: -127.5s;
+}
+.scene .ball:nth-child(171) {
+  background-color: hsl(307.8deg, 50%, 70%);
+  -webkit-animation-delay: -128.25s;
+          animation-delay: -128.25s;
+}
+.scene .ball:nth-child(172) {
+  background-color: hsl(309.6deg, 50%, 70%);
+  -webkit-animation-delay: -129s;
+          animation-delay: -129s;
+}
+.scene .ball:nth-child(173) {
+  background-color: hsl(311.4deg, 50%, 70%);
+  -webkit-animation-delay: -129.75s;
+          animation-delay: -129.75s;
+}
+.scene .ball:nth-child(174) {
+  background-color: hsl(313.2deg, 50%, 70%);
+  -webkit-animation-delay: -130.5s;
+          animation-delay: -130.5s;
+}
+.scene .ball:nth-child(175) {
+  background-color: hsl(315deg, 50%, 70%);
+  -webkit-animation-delay: -131.25s;
+          animation-delay: -131.25s;
+}
+.scene .ball:nth-child(176) {
+  background-color: hsl(316.8deg, 50%, 70%);
+  -webkit-animation-delay: -132s;
+          animation-delay: -132s;
+}
+.scene .ball:nth-child(177) {
+  background-color: hsl(318.6deg, 50%, 70%);
+  -webkit-animation-delay: -132.75s;
+          animation-delay: -132.75s;
+}
+.scene .ball:nth-child(178) {
+  background-color: hsl(320.4deg, 50%, 70%);
+  -webkit-animation-delay: -133.5s;
+          animation-delay: -133.5s;
+}
+.scene .ball:nth-child(179) {
+  background-color: hsl(322.2deg, 50%, 70%);
+  -webkit-animation-delay: -134.25s;
+          animation-delay: -134.25s;
+}
+.scene .ball:nth-child(180) {
+  background-color: hsl(324deg, 50%, 70%);
+  -webkit-animation-delay: -135s;
+          animation-delay: -135s;
+}
+.scene .ball:nth-child(181) {
+  background-color: hsl(325.8deg, 50%, 70%);
+  -webkit-animation-delay: -135.75s;
+          animation-delay: -135.75s;
+}
+.scene .ball:nth-child(182) {
+  background-color: hsl(327.6deg, 50%, 70%);
+  -webkit-animation-delay: -136.5s;
+          animation-delay: -136.5s;
+}
+.scene .ball:nth-child(183) {
+  background-color: hsl(329.4deg, 50%, 70%);
+  -webkit-animation-delay: -137.25s;
+          animation-delay: -137.25s;
+}
+.scene .ball:nth-child(184) {
+  background-color: hsl(331.2deg, 50%, 70%);
+  -webkit-animation-delay: -138s;
+          animation-delay: -138s;
+}
+.scene .ball:nth-child(185) {
+  background-color: hsl(333deg, 50%, 70%);
+  -webkit-animation-delay: -138.75s;
+          animation-delay: -138.75s;
+}
+.scene .ball:nth-child(186) {
+  background-color: hsl(334.8deg, 50%, 70%);
+  -webkit-animation-delay: -139.5s;
+          animation-delay: -139.5s;
+}
+.scene .ball:nth-child(187) {
+  background-color: hsl(336.6deg, 50%, 70%);
+  -webkit-animation-delay: -140.25s;
+          animation-delay: -140.25s;
+}
+.scene .ball:nth-child(188) {
+  background-color: hsl(338.4deg, 50%, 70%);
+  -webkit-animation-delay: -141s;
+          animation-delay: -141s;
+}
+.scene .ball:nth-child(189) {
+  background-color: hsl(340.2deg, 50%, 70%);
+  -webkit-animation-delay: -141.75s;
+          animation-delay: -141.75s;
+}
+.scene .ball:nth-child(190) {
+  background-color: hsl(342deg, 50%, 70%);
+  -webkit-animation-delay: -142.5s;
+          animation-delay: -142.5s;
+}
+.scene .ball:nth-child(191) {
+  background-color: hsl(343.8deg, 50%, 70%);
+  -webkit-animation-delay: -143.25s;
+          animation-delay: -143.25s;
+}
+.scene .ball:nth-child(192) {
+  background-color: hsl(345.6deg, 50%, 70%);
+  -webkit-animation-delay: -144s;
+          animation-delay: -144s;
+}
+.scene .ball:nth-child(193) {
+  background-color: hsl(347.4deg, 50%, 70%);
+  -webkit-animation-delay: -144.75s;
+          animation-delay: -144.75s;
+}
+.scene .ball:nth-child(194) {
+  background-color: hsl(349.2deg, 50%, 70%);
+  -webkit-animation-delay: -145.5s;
+          animation-delay: -145.5s;
+}
+.scene .ball:nth-child(195) {
+  background-color: hsl(351deg, 50%, 70%);
+  -webkit-animation-delay: -146.25s;
+          animation-delay: -146.25s;
+}
+.scene .ball:nth-child(196) {
+  background-color: hsl(352.8deg, 50%, 70%);
+  -webkit-animation-delay: -147s;
+          animation-delay: -147s;
+}
+.scene .ball:nth-child(197) {
+  background-color: hsl(354.6deg, 50%, 70%);
+  -webkit-animation-delay: -147.75s;
+          animation-delay: -147.75s;
+}
+.scene .ball:nth-child(198) {
+  background-color: hsl(356.4deg, 50%, 70%);
+  -webkit-animation-delay: -148.5s;
+          animation-delay: -148.5s;
+}
+.scene .ball:nth-child(199) {
+  background-color: hsl(358.2deg, 50%, 70%);
+  -webkit-animation-delay: -149.25s;
+          animation-delay: -149.25s;
+}
+.scene .ball:nth-child(200) {
+  background-color: hsl(0deg, 50%, 70%);
+  -webkit-animation-delay: -150s;
+          animation-delay: -150s;
+}
+
+@-webkit-keyframes spring {
+  0% {
+    transform: rotate(0deg) translateY(180px) rotateX(0deg) translateZ(60px) rotateX(5400deg) rotateY(360deg);
+  }
+  100% {
+    transform: rotate(360deg) translateY(180px) rotateX(5400deg) rotateZ(0deg) translateZ(60px) rotateX(0deg) rotateY(0deg);
+  }
+}
+
+@keyframes spring {
+  0% {
+    transform: rotate(0deg) translateY(180px) rotateX(0deg) translateZ(60px) rotateX(5400deg) rotateY(360deg);
+  }
+  100% {
+    transform: rotate(360deg) translateY(180px) rotateX(5400deg) rotateZ(0deg) translateZ(60px) rotateX(0deg) rotateY(0deg);
+  }
+}
+@-webkit-keyframes rotating {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  100% {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+@keyframes rotating {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  100% {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */

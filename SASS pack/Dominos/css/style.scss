@@ -1,0 +1,120 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$sSize: 20px;
+$mSize: 100px;
+$lSize: 170px;
+$delayFactor: 0.6s;
+body {
+    background: radial-gradient( #333 15%, #111 75%);
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+.scene {
+    width: 100%;
+    height: 100vmin;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-45deg);
+    transition: 1s;
+    .domin {
+        width: $mSize;
+        height: $lSize;
+        transform-style: preserve-3d;
+        transform: rotateY(90deg);
+        // rotateX(-83deg) falling in X rotate
+        margin-top: 50px;
+        margin-right: 200px;
+        position: absolute;
+        transform-origin: bottom;
+        animation: anime 1s ease-in;
+        animation-fill-mode: forwards;
+        .face {
+            position: absolute;
+        }
+        .front, .behind {
+            background-color: #b4b4b4;
+        }
+        .bottom, .top {
+            background-color: #ff3333;
+        }
+        .left, .right {
+            background-color: #797979;
+        } 
+        .front {
+            width: $mSize;
+            height: $lSize;
+            transform: translateZ(0);
+        }
+        .behind {
+            width: $mSize;
+            height: $lSize;
+            transform: translateZ(-$sSize);
+        }
+        .top {
+            width: $mSize;
+            height: $sSize;
+            transform-origin: bottom;
+            transform: rotateX(90deg) translateZ($sSize);
+        }
+        .bottom {
+            width: $mSize;
+            height: $sSize;
+            transform-origin: top;
+            transform: rotateX(-90deg) translateZ($sSize);
+            bottom: 0 !important;
+        }
+        .left {
+            width: $sSize;
+            height: $lSize;
+            transform-origin: right;
+            transform: rotateY(-90deg) translateZ($sSize);
+            left: 0;
+        }
+        .right {
+            width: $sSize;
+            height: $lSize;
+            transform-origin: left;
+            transform: rotateY(90deg) translateZ($sSize);
+            right: 0 !important;
+        }
+        @for $i from 1 through 12 {
+            &:nth-child(#{$i}) {
+                left: ($i * 11.5%);
+                animation-delay: ($i * $delayFactor);
+            }
+        }
+    }
+}
+input[type='button'] {
+    width: 100px;
+    height: 100px;
+    background-color: #ff2424;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    transform: rotateX(25deg) rotateY(25deg) rotateZ(-20deg);
+    transform-style: preserve-3d;
+    transition: 0.4s;
+    cursor: pointer;
+}
+input[type='button']:hover ~ .scene {
+    transform: rotateX(-30deg) rotateY(45deg);
+}
+input[type='button']:hover {
+    transform: rotateX(25deg) rotateY(25deg) rotateZ(-20deg) translateZ(40px);
+}
+@keyframes anime {
+    from {
+        transform: rotateY(90deg) rotateX(0) translateX(0);
+    }
+    to {
+        transform: rotateY(90deg) rotateX(-83deg) translateY(15px);
+    }
+}

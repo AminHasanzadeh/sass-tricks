@@ -1,0 +1,76 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$count: 24;
+body {
+    overflow: hidden;
+}
+.scene {
+    width: 100%;
+    height: 100vmin;
+    background-color: #111;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    .box {
+        width: 700px;
+        height: 400px;
+        margin-top: 20px;
+        transform: rotate(-15deg);
+        .container {
+            width: 700px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            animation: rotate 5s linear infinite;
+            .rod {
+                width: 650px / $count;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                span {
+                    width: 45%;
+                    height: 47%;
+                    position: relative;
+                }
+                .left::before, .right::before {
+                    content: '';
+                    width: 32px;
+                    height: 32px;
+                    position: absolute;
+                    border-radius: 50%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                .left::before {
+                    top: -40px;
+                }
+                .right::before {
+                    bottom: -40px;
+                }
+                @for $i from 1 through $count {
+                    &:nth-child(#{$i}) {
+                        transform: rotateX(((360deg / 2) / $count) * $i);
+                        span {
+                            background-color: hsl((360deg / $count) * $i, 70%, 50%);
+                            &.left::before, &.right::before {
+                                background-color: hsl((360deg / $count) * $i, 70%, 50%);
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+@keyframes rotate {
+    to {
+        transform: rotateX(360deg);
+    }
+}

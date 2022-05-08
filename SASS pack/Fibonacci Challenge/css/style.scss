@@ -1,0 +1,77 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+//change $angle value to see different result these are best : 10deg 150deg 180deg 120deg 60deg
+$amount: 400;
+$angle: 136deg;
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+.scene {
+    margin-top: -50px;
+    width: 700px;
+    height: 700px;
+    // transition: 0.5s linear;
+    transform-style: preserve-3d;
+    position: relative;
+    animation: rotate 44s linear infinite;
+    .dot {
+        display: block;
+        position: absolute;
+        transform-style: preserve-3d;
+        top: 50%;
+        left: 50%;
+        transform: translate(-505, -50%);
+        .inner {
+            width: 5px;
+            height: 5px;
+            transform-style: preserve-3d;
+            display: block;
+            border-radius: 50%;
+            animation: glow 4s ease-in-out forwards infinite;
+        }
+        //this is main mechanic of this trick . translate3d is for better animation showing
+        //$ansgle from top multiply $i is for rotating element then moving it in X axis with translate .
+        //delay as you can see 
+        //and last thing is background 360 / $amount is for : hsl have 360degree as color value
+        //so I broke this value to asign each for a dot . the multiplied in $i for have a rainbow color. 
+        @for $i from 1 through $amount {
+            &:nth-child(#{$i}) {
+                transform: rotate($i * $angle) translate3d($i * 1px, 0, $i * 1px);
+                .inner {
+                    animation-delay: $i * 0.05s;
+                    background-color: hsl(((360 / $amount) * $i), 70%, 70%);
+                }
+            }
+        }
+    }
+}
+//this animation first starts at small dot then goes big dot and move a little bottom-left then backing into its position
+@keyframes glow {
+    0% {
+        transform: scale(1) translate3d(0px, 0px, 0px);
+    }
+    50% {
+        transform: scale(2.4) translate3d(0px, 5px, 0px);
+    }
+    100% {
+        transform: scale(0.6) translate3d(0px, 1px, 0px);
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}

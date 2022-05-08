@@ -1,0 +1,162 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$outersize: 200px;
+$animeDurate: 2s;
+$faceDegs: 90deg;
+body {
+    background: black;
+}
+#scene {
+    width: 100%;
+    height: 100vmin;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: -50px;
+    position: relative;
+    animation: levi $animeDurate ease infinite alternate;
+    .cube-outer {
+        width: $outersize;
+        height: $outersize;
+        position: relative;
+        transform-style: preserve-3d;
+        transform: rotateX(-33.5deg) rotateY(45deg);
+        animation: flipY ($animeDurate * 2) ease infinite;
+        .face {
+            width: 100%;
+            height: 100%;
+            border: 3px solid white;
+            position: absolute;
+            background-color: rgba(124, 124, 124, 0.5);
+            transform-style: preserve-3d;
+        }
+        .front {
+            transform: translateZ(-$outersize);
+        }
+        .behind {
+            transform: translateZ(0);
+        }
+        .left {
+            transform-origin: right;
+            transform: rotateY(-$faceDegs);
+        }
+        .right {
+            transform-origin: left;
+            transform: rotateY($faceDegs);
+        }
+        .top {
+            transform-origin: bottom;
+            transform: rotateX($faceDegs);
+        }
+        .bottom {
+            transform-origin: top;
+            transform: rotateX(-$faceDegs);
+        }
+    }
+    .cube-inner {
+        width: $outersize / 2;
+        height: $outersize / 2;
+        transform-style: preserve-3d;
+        position: absolute;
+        animation: flipY-in ($animeDurate * 2) ease infinite;
+        .face {
+            width: 100%;
+            height: 100%;
+            border: 1px solid white;
+            position: absolute;
+            background-color: rgba(255, 87, 87, 0.5);
+            transform-style: preserve-3d;
+        }
+        .front {
+            transform: translateZ(-$outersize / 2);
+        }
+        .behind {
+            transform: translateZ(0);
+        }
+        .left {
+            transform-origin: right;
+            transform: rotateY(-$faceDegs);
+        }
+        .right {
+            transform-origin: left;
+            transform: rotateY($faceDegs);
+        }
+        .top {
+            transform-origin: bottom;
+            transform: rotateX($faceDegs);
+        }
+        .bottom {
+            transform-origin: top;
+            transform: rotateX(-$faceDegs);
+        }
+    }
+}
+.shadow {
+    width: $outersize;
+    height: $outersize;
+    transform: rotateX(55.5deg) rotateY(0deg) rotateZ(45deg) translateX(-80%);
+    position: absolute;
+    bottom: -$outersize / 10;
+    left: 50%;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px 6px rgba(255, 255, 255, 0.5);
+    filter: blur(12px);
+    animation: shadow $animeDurate ease infinite alternate;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: $outersize / 2;
+        height: $outersize / 2;
+        filter: blur(12px);
+        background-color: rgba(158, 94, 94, 0.5);
+        box-shadow: 0 0 10px 6px rgba(158, 94, 94, 0.5);
+        animation: shadow $animeDurate ease infinite alternate;
+    }
+}
+@keyframes flipY {
+    0% {
+        transform: translateY(0) translateX(53.5%) scale3D(1,1,1) rotateZ(0deg) rotateX(-33.5deg) rotateY(45deg); 
+        }
+	20.25%{
+        transform: translateY(-38.5%) translateX(53.5%) scale3D(1,1,1) rotateZ(0deg) rotateX(-33.5deg) rotateY(135deg);
+        }
+	100% {
+        transform: translateY(-38.5%) translateX(53.5%) scale3D(1,1,1) rotateZ(0deg) rotateX(-33.5deg) rotateY(135deg); 
+        }
+}
+@keyframes flipY-in {
+    0% { 
+        transform: translateY(-13.5%) translateX(-13.5%) scale3D(1,1,1) rotateZ(0deg) rotateX(-33.5deg) rotateY(-45deg); 
+    }
+	20.25%{
+        transform: translateY(-56.5%) translateX(0) scale3D(1,1,1) rotateZ(0deg) rotateX(-33.5deg) rotateY(-135deg); 
+        }
+	100% {
+        transform: translateY(-56.5%) translateX(0) scale3D(1,1,1) rotateZ(0deg) rotateX(-33.5deg) rotateY(-135deg); 
+    }
+}
+@keyframes levi {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+@keyframes shadow {
+    0% {
+        filter: blur(12px);
+    }
+    100% {
+        filter: blur(24px);
+    }
+}
